@@ -18,11 +18,14 @@
 /*              ~ COMPONENTS ~               */
 /* ----------------------------------------- */
 @import "components/header";
+@import "components/navbar.scss";
 @import "components/footer";
 @import "components/logo";
 @import "components/avatar";
-@import "components/carousel";
 @import "components/split-bar";
+@import "components/carousel";
+@import "components/cards";
+@import "components/team";
 /* ----------------------------------------- */
 /*                 ~ PAGES ~                 */
 /* ----------------------------------------- */

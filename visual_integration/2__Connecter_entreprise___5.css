@@ -1,0 +1,317 @@
+.mediaViewInfo {
+	--web-view-name: 2- Connecter entreprise – 5;
+	--web-view-id: ID2__Connecter_entreprise___5;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-navigate-on-keypress: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: ID2__Connecter_entreprise___5;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+.ID2__Connecter_entreprise___5_Class {
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	left: 50%;
+	top: 50%;
+	width: 1920px;
+	height: 1086px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: 2- Connecter entreprise – 5;
+	--web-view-id: ID2__Connecter_entreprise___5;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-navigate-on-keypress: true;
+	--web-enable-deep-linking: true;
+}
+.Path_21_bv {
+	overflow: visible;
+	position: absolute;
+	width: 728px;
+	height: 1073.5px;
+	left: 899px;
+	top: 37px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_8_bx {
+	overflow: visible;
+	position: absolute;
+	width: 728px;
+	height: 1073.5px;
+	transform: matrix(1,0,0,1,301,37) rotate(180deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Rectangle_148 {
+	position: absolute;
+	overflow: visible;
+	width: 1108px;
+	height: 1074px;
+	left: 406px;
+	top: 36px;
+}
+.Rectangle_113 {
+	position: absolute;
+	overflow: visible;
+	width: 1829px;
+	height: 59px;
+	left: 0px;
+	top: 0px;
+}
+.Rectangle_114 {
+	position: absolute;
+	overflow: visible;
+	width: 115px;
+	height: 59px;
+	left: 1805px;
+	top: 0px;
+}
+.Entreprise_Class {
+	position: absolute;
+	left: 1555px;
+	top: 17px;
+	overflow: visible;
+	width: 135px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Certifications_Class {
+	position: absolute;
+	left: 1338px;
+	top: 17px;
+	overflow: visible;
+	width: 181px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Line_41 {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 59px;
+	left: 1718.5px;
+	top: 0.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Offres_Class {
+	position: absolute;
+	left: 1221px;
+	top: 17px;
+	overflow: visible;
+	width: 89px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.accueil_Class {
+	position: absolute;
+	left: 1080px;
+	top: 17px;
+	overflow: visible;
+	width: 105px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.noun_Paper_Airplane_12136_Class {
+	position: absolute;
+	width: 48.048px;
+	height: 30.498px;
+	left: 1736.961px;
+	top: 14px;
+	overflow: visible;
+}
+.Group_5_Class {
+	position: absolute;
+	width: 48.048px;
+	height: 30.498px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_1 {
+	overflow: visible;
+	position: absolute;
+	width: 48.047px;
+	height: 30.497px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_3 {
+	overflow: visible;
+	position: absolute;
+	width: 11.129px;
+	height: 11.335px;
+	transform: matrix(1,0,0,1,1888.2309,32.2261) rotate(45deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Ellipse_6 {
+	position: absolute;
+	overflow: visible;
+	width: 46px;
+	height: 46px;
+	left: 1818px;
+	top: 7px;
+}
+.Rectangle_146 {
+	position: absolute;
+	overflow: visible;
+	width: 66px;
+	height: 68px;
+	left: 472px;
+	top: 141px;
+}
+.Path_9 {
+	overflow: visible;
+	position: absolute;
+	width: 20.044px;
+	height: 20.155px;
+	transform: matrix(1,0,0,1,498.3441,164.462) rotate(-45deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Line_87 {
+	overflow: visible;
+	position: absolute;
+	width: 99px;
+	height: 5px;
+	left: 914.5px;
+	top: 220.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Email_Class {
+	position: absolute;
+	left: 0px;
+	top: 119px;
+	overflow: hidden;
+	width: 1921px;
+	height: 90px;
+	text-align: center;
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 80px;
+	color: rgba(55,57,66,1);
+}
+.Rectangle_180 {
+	position: absolute;
+	overflow: visible;
+	width: 956px;
+	height: 342px;
+	left: 471px;
+	top: 295px;
+}
+.email_mail_com_Class {
+	position: absolute;
+	left: 538px;
+	top: 423px;
+	overflow: visible;
+	width: 849px;
+	height: 52px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(55,57,66,1);
+}
+.Modifier_le_Mail_Class {
+	position: absolute;
+	left: 507px;
+	top: 342px;
+	overflow: visible;
+	width: 849px;
+	height: 52px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(55,57,66,1);
+}
+.Rectangle_197 {
+	position: absolute;
+	overflow: visible;
+	width: 322px;
+	height: 60px;
+	left: 1060px;
+	top: 528px;
+}
+.Rectangle_220 {
+	position: absolute;
+	overflow: visible;
+	width: 322px;
+	height: 60px;
+	left: 523px;
+	top: 528px;
+}
+.Enregister_Class {
+	position: absolute;
+	left: 1074px;
+	top: 547px;
+	overflow: visible;
+	width: 289px;
+	height: 35px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(55,57,66,1);
+}
+.Annuler_Class {
+	position: absolute;
+	left: 537px;
+	top: 547px;
+	overflow: visible;
+	width: 289px;
+	height: 35px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(55,57,66,1);
+}
+.Rectangle_219 {
+	position: absolute;
+	overflow: visible;
+	width: 868px;
+	height: 90px;
+	left: 518px;
+	top: 398px;
+}

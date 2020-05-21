@@ -1,4 +1,11 @@
-.logo-nav{
-  width: 8rem;
-  height: 4rem;
+.carousel-caption {
+
+  .logo {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 }

@@ -1,0 +1,367 @@
+.mediaViewInfo {
+	--web-view-name: 2- Landing page connecté – 2;
+	--web-view-id: ID2__Landing_page_connect____2;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-navigate-on-keypress: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: ID2__Landing_page_connect____2;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+.ID2__Landing_page_connect____2_Class {
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	left: 50%;
+	top: 50%;
+	width: 1920px;
+	height: 1086px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: 2- Landing page connecté – 2;
+	--web-view-id: ID2__Landing_page_connect____2;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-navigate-on-keypress: true;
+	--web-enable-deep-linking: true;
+}
+.alex_kotliarskyi_QBpZGqEMsKg_u_Class {
+	position: absolute;
+	width: 1920.063px;
+	height: 903.237px;
+	left: 0px;
+	top: 57.882px;
+	overflow: visible;
+}
+.Rectangle_115_bw {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 961px;
+	left: 0px;
+	top: -34px;
+}
+.Bienvenue_sur_Worker_Genuis_Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.78));
+	position: absolute;
+	left: 258px;
+	top: 361px;
+	overflow: visible;
+	width: 1406px;
+	height: 262px;
+	text-align: center;
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 70px;
+	color: rgba(255,255,255,1);
+}
+.logo_blanc_Class {
+	position: absolute;
+	width: 143px;
+	height: 211px;
+	left: 889px;
+	top: 113px;
+	overflow: visible;
+}
+.Formation_du_moment_Class {
+	position: absolute;
+	left: 0px;
+	top: 1020px;
+	overflow: hidden;
+	width: 1921px;
+	height: 90px;
+	text-align: center;
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 80px;
+	color: rgba(55,57,66,1);
+}
+.Rectangle_113 {
+	position: absolute;
+	overflow: visible;
+	width: 1829px;
+	height: 59px;
+	left: 0px;
+	top: 0px;
+}
+.Rectangle_114 {
+	position: absolute;
+	overflow: visible;
+	width: 115px;
+	height: 59px;
+	left: 1805px;
+	top: 0px;
+}
+.Entreprise_Class {
+	position: absolute;
+	left: 1555px;
+	top: 17px;
+	overflow: visible;
+	width: 135px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Certifications_Class {
+	position: absolute;
+	left: 1338px;
+	top: 17px;
+	overflow: visible;
+	width: 181px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Line_41 {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 59px;
+	left: 1718.5px;
+	top: 0.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Offres_Class {
+	position: absolute;
+	left: 1221px;
+	top: 17px;
+	overflow: visible;
+	width: 89px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.accueil_Class {
+	position: absolute;
+	left: 1080px;
+	top: 17px;
+	overflow: visible;
+	width: 105px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.noun_Paper_Airplane_12136_Class {
+	position: absolute;
+	width: 48.048px;
+	height: 30.498px;
+	left: 1736.961px;
+	top: 14px;
+	overflow: visible;
+}
+.Group_5_Class {
+	position: absolute;
+	width: 48.048px;
+	height: 30.498px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_1 {
+	overflow: visible;
+	position: absolute;
+	width: 48.048px;
+	height: 30.498px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_3 {
+	overflow: visible;
+	position: absolute;
+	width: 11.129px;
+	height: 11.335px;
+	transform: matrix(1,0,0,1,1888.2315,32.2259) rotate(225deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Rectangle_127 {
+	position: absolute;
+	overflow: visible;
+	width: 239px;
+	height: 178px;
+	left: 1672px;
+	top: 69px;
+}
+.noun_User_3267576_Class {
+	position: absolute;
+	width: 26.543px;
+	height: 30.418px;
+	left: 1692.418px;
+	top: 88.041px;
+	overflow: visible;
+}
+.Group_6_Class {
+	position: absolute;
+	width: 26.543px;
+	height: 30.418px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_2 {
+	overflow: visible;
+	position: absolute;
+	width: 26.543px;
+	height: 13.6px;
+	left: 0px;
+	top: 16.817px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Ellipse_1 {
+	position: absolute;
+	overflow: visible;
+	width: 16.439px;
+	height: 16.439px;
+	left: 5.051px;
+	top: 0px;
+}
+.Mon_Profile_Class {
+	position: absolute;
+	left: 1734px;
+	top: 91px;
+	overflow: visible;
+	width: 161px;
+	height: 25px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Candidature_Class {
+	position: absolute;
+	left: 1734px;
+	top: 147px;
+	overflow: visible;
+	width: 161px;
+	height: 25px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.D_connexion_Class {
+	position: absolute;
+	left: 1734px;
+	top: 207px;
+	overflow: visible;
+	width: 161px;
+	height: 25px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.noun_Power_714772_Class {
+	position: absolute;
+	width: 31.369px;
+	height: 31.961px;
+	left: 1693.389px;
+	top: 201.347px;
+	overflow: visible;
+}
+.Path_4 {
+	overflow: visible;
+	position: absolute;
+	width: 31.369px;
+	height: 28.129px;
+	left: 0px;
+	top: 3.832px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_5 {
+	overflow: visible;
+	position: absolute;
+	width: 4.319px;
+	height: 19.45px;
+	left: 13.525px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_53 {
+	overflow: visible;
+	position: absolute;
+	width: 225px;
+	height: 3px;
+	left: 1679.5px;
+	top: 186.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_54 {
+	overflow: visible;
+	position: absolute;
+	width: 223px;
+	height: 1px;
+	left: 1679.5px;
+	top: 126.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.noun_Mail_3258972_Class {
+	position: absolute;
+	width: 35.232px;
+	height: 24.022px;
+	left: 1688.526px;
+	top: 147.268px;
+	overflow: visible;
+}
+.Path_6 {
+	overflow: visible;
+	position: absolute;
+	width: 35.232px;
+	height: 22.103px;
+	left: 0px;
+	top: 1.919px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_7 {
+	overflow: visible;
+	position: absolute;
+	width: 33.457px;
+	height: 11.857px;
+	left: 0.888px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Ellipse_6 {
+	position: absolute;
+	overflow: visible;
+	width: 46px;
+	height: 46px;
+	left: 1818px;
+	top: 7px;
+}
