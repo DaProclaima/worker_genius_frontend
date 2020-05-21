@@ -1,6 +1,8 @@
 .mediaViewInfo {
 	--web-view-name: 1-Landing page;
 	--web-view-id: ID1_Landing_page;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
 	--web-center-horizontally: true;
 	--web-center-vertically: true;
 	--web-navigate-on-keypress: true;
@@ -28,6 +30,8 @@
 	flex-direction: flex;
 	--web-view-name: 1-Landing page;
 	--web-view-id: ID1_Landing_page;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
 	--web-center-horizontally: true;
 	--web-center-vertically: true;
 	--web-navigate-on-keypress: true;

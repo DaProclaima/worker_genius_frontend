@@ -1,0 +1,386 @@
+.mediaViewInfo {
+	--web-view-name: 2- Landing page connecté - Message – Ouvert;
+	--web-view-id: ID2__Landing_page_connect____Message___Ouvert;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-navigate-on-keypress: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: ID2__Landing_page_connect____Message___Ouvert;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+.ID2__Landing_page_connect____Message___Ouvert_Class {
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	left: 50%;
+	top: 50%;
+	width: 1920px;
+	height: 1086px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: 2- Landing page connecté - Message – Ouvert;
+	--web-view-id: ID2__Landing_page_connect____Message___Ouvert;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-navigate-on-keypress: true;
+	--web-enable-deep-linking: true;
+}
+.alex_kotliarskyi_QBpZGqEMsKg_u_Class {
+	position: absolute;
+	width: 1920.063px;
+	height: 903.237px;
+	left: 0px;
+	top: 57.882px;
+	overflow: visible;
+}
+.Rectangle_115_bw {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 961px;
+	left: 0px;
+	top: -34px;
+}
+.Bienvenue_sur_Worker_Genuis_Class {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.78));
+	position: absolute;
+	left: 258px;
+	top: 361px;
+	overflow: visible;
+	width: 1406px;
+	height: 262px;
+	text-align: center;
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 70px;
+	color: rgba(255,255,255,1);
+}
+.logo_blanc_Class {
+	position: absolute;
+	width: 143px;
+	height: 211px;
+	left: 889px;
+	top: 113px;
+	overflow: visible;
+}
+.Formation_du_moment_Class {
+	position: absolute;
+	left: 0px;
+	top: 1020px;
+	overflow: hidden;
+	width: 1921px;
+	height: 90px;
+	text-align: center;
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 80px;
+	color: rgba(55,57,66,1);
+}
+.Ellipse_2 {
+	position: absolute;
+	overflow: visible;
+	width: 18px;
+	height: 18px;
+	left: 1787px;
+	top: 33px;
+}
+.Rectangle_125 {
+	position: absolute;
+	overflow: visible;
+	width: 351px;
+	height: 283px;
+	left: 1472px;
+	top: 69px;
+}
+.Line_51 {
+	overflow: visible;
+	position: absolute;
+	width: 352px;
+	height: 1px;
+	left: 1471.5px;
+	top: 147.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_52 {
+	overflow: visible;
+	position: absolute;
+	width: 352px;
+	height: 1px;
+	left: 1472.5px;
+	top: 234.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Ellipse_3 {
+	position: absolute;
+	overflow: visible;
+	width: 46px;
+	height: 46px;
+	left: 1484px;
+	top: 85px;
+}
+.Ellipse_4 {
+	position: absolute;
+	overflow: visible;
+	width: 46px;
+	height: 46px;
+	left: 1484px;
+	top: 167px;
+}
+.Ellipse_5 {
+	position: absolute;
+	overflow: visible;
+	width: 46px;
+	height: 46px;
+	left: 1484px;
+	top: 258px;
+}
+.Nicolas_Pestre_Class {
+	position: absolute;
+	left: 1541px;
+	top: 88px;
+	overflow: hidden;
+	width: 192px;
+	height: 18px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(55,57,66,1);
+}
+.Nicolas_Pestre_b_Class {
+	position: absolute;
+	left: 1541px;
+	top: 170px;
+	overflow: hidden;
+	width: 192px;
+	height: 18px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(55,57,66,1);
+}
+.Nicolas_Pestre_ca_Class {
+	position: absolute;
+	left: 1541px;
+	top: 261px;
+	overflow: hidden;
+	width: 192px;
+	height: 18px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(55,57,66,1);
+}
+.Vous___Merci_beaucoup_Class {
+	position: absolute;
+	left: 1541px;
+	top: 111px;
+	overflow: hidden;
+	width: 192px;
+	height: 18px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(55,57,66,1);
+}
+.Vous___Merci_beaucoup_cb_Class {
+	position: absolute;
+	left: 1541px;
+	top: 193px;
+	overflow: hidden;
+	width: 192px;
+	height: 18px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(55,57,66,1);
+}
+.Vous___Merci_beaucoup_cc_Class {
+	position: absolute;
+	left: 1541px;
+	top: 284px;
+	overflow: hidden;
+	width: 192px;
+	height: 18px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(55,57,66,1);
+}
+.Rectangle_126 {
+	position: absolute;
+	overflow: visible;
+	width: 351px;
+	height: 30px;
+	left: 1472px;
+	top: 322px;
+}
+.Voire_toute_les_conversations_Class {
+	position: absolute;
+	left: 1538px;
+	top: 327px;
+	overflow: hidden;
+	width: 222px;
+	height: 18px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: rgba(255,255,255,1);
+}
+.Rectangle_113 {
+	position: absolute;
+	overflow: visible;
+	width: 1829px;
+	height: 59px;
+	left: 0px;
+	top: 0px;
+}
+.Rectangle_114 {
+	position: absolute;
+	overflow: visible;
+	width: 115px;
+	height: 59px;
+	left: 1805px;
+	top: 0px;
+}
+.Line_41 {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 59px;
+	left: 1718.5px;
+	top: 0.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.noun_Paper_Airplane_12136_Class {
+	position: absolute;
+	width: 48.048px;
+	height: 30.498px;
+	left: 1736.961px;
+	top: 14px;
+	overflow: visible;
+}
+.Group_5_Class {
+	position: absolute;
+	width: 48.048px;
+	height: 30.498px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_1 {
+	overflow: visible;
+	position: absolute;
+	width: 48.048px;
+	height: 30.498px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_3 {
+	overflow: visible;
+	position: absolute;
+	width: 11.129px;
+	height: 11.335px;
+	transform: matrix(1,0,0,1,1888.2314,32.2256) rotate(45deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Ellipse_6 {
+	position: absolute;
+	overflow: visible;
+	width: 46px;
+	height: 46px;
+	left: 1818px;
+	top: 7px;
+}
+.Ellipse_7 {
+	position: absolute;
+	overflow: visible;
+	width: 18px;
+	height: 18px;
+	left: 1762px;
+	top: 33px;
+}
+.Entreprise_Class {
+	position: absolute;
+	left: 1555px;
+	top: 17px;
+	overflow: visible;
+	width: 135px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Certifications_Class {
+	position: absolute;
+	left: 1338px;
+	top: 17px;
+	overflow: visible;
+	width: 181px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Offres_Class {
+	position: absolute;
+	left: 1221px;
+	top: 17px;
+	overflow: visible;
+	width: 89px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.accueil_Class {
+	position: absolute;
+	left: 1080px;
+	top: 17px;
+	overflow: visible;
+	width: 105px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
