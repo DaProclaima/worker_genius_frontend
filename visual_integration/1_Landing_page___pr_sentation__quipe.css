@@ -1,0 +1,455 @@
+.mediaViewInfo {
+	--web-view-name: 1-Landing page – présentation équipe;
+	--web-view-id: ID1_Landing_page___pr_sentation__quipe;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-navigate-on-keypress: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: ID1_Landing_page___pr_sentation__quipe;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+.ID1_Landing_page___pr_sentation__quipe_Class {
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	left: 50%;
+	top: 50%;
+	width: 1920px;
+	height: 2416px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: 1-Landing page – présentation équipe;
+	--web-view-id: ID1_Landing_page___pr_sentation__quipe;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-navigate-on-keypress: true;
+	--web-enable-deep-linking: true;
+}
+.Rectangle_113_dw {
+	position: absolute;
+	overflow: visible;
+	width: 1753px;
+	height: 59px;
+	left: 0px;
+	top: 0px;
+}
+.Rectangle_114_dx {
+	position: absolute;
+	overflow: visible;
+	width: 179px;
+	height: 59px;
+	left: 1741px;
+	top: 0px;
+}
+.S_inscrire_dz_Class {
+	position: absolute;
+	left: 1742px;
+	top: 17px;
+	overflow: visible;
+	width: 179px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Se_connecter_d_Class {
+	position: absolute;
+	left: 1520px;
+	top: 17px;
+	overflow: visible;
+	width: 215px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Entreprise_d_Class {
+	position: absolute;
+	left: 1350px;
+	top: 17px;
+	overflow: visible;
+	width: 135px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Formation_Class {
+	position: absolute;
+	left: 1181px;
+	top: 17px;
+	overflow: visible;
+	width: 133px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Offres_dh_Class {
+	position: absolute;
+	left: 1056px;
+	top: 17px;
+	overflow: visible;
+	width: 89px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Line_41_d {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 59px;
+	left: 1513.5px;
+	top: 0.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Offres_dh_Class {
+	position: absolute;
+	left: 1056px;
+	top: 17px;
+	overflow: visible;
+	width: 89px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.accueil_Class {
+	position: absolute;
+	left: 915px;
+	top: 17px;
+	overflow: visible;
+	width: 105px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.L__quipe_worker_Genius_Class {
+	position: absolute;
+	left: 0px;
+	top: 118px;
+	overflow: hidden;
+	width: 1921px;
+	height: 90px;
+	text-align: center;
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 80px;
+	color: rgba(55,57,66,1);
+}
+.Line_42 {
+	overflow: visible;
+	position: absolute;
+	width: 541.009px;
+	height: 6.009px;
+	left: 692.5px;
+	top: 208.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Ellipse_9 {
+	position: absolute;
+	overflow: visible;
+	width: 384px;
+	height: 385px;
+	left: 476px;
+	top: 310px;
+}
+.Ellipse_12 {
+	position: absolute;
+	overflow: visible;
+	width: 384px;
+	height: 385px;
+	left: 476px;
+	top: 898px;
+}
+.Ellipse_10 {
+	position: absolute;
+	overflow: visible;
+	width: 384px;
+	height: 385px;
+	left: 1087px;
+	top: 310px;
+}
+.Ellipse_11 {
+	position: absolute;
+	overflow: visible;
+	width: 384px;
+	height: 385px;
+	left: 1087px;
+	top: 898px;
+}
+.Ellipse_13 {
+	position: absolute;
+	overflow: visible;
+	width: 384px;
+	height: 385px;
+	left: 768px;
+	top: 1506px;
+}
+.Nom_Pr_nom___Fonction_Class {
+	position: absolute;
+	left: 445.5px;
+	top: 714px;
+	overflow: visible;
+	width: 447px;
+	height: 52px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(55,57,66,1);
+}
+.Nom_Pr_nom___Fonction_dr_Class {
+	position: absolute;
+	left: 445.5px;
+	top: 1302px;
+	overflow: visible;
+	width: 447px;
+	height: 52px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(55,57,66,1);
+}
+.Nom_Pr_nom___Fonction_ds_Class {
+	position: absolute;
+	left: 1056.5px;
+	top: 714px;
+	overflow: visible;
+	width: 447px;
+	height: 52px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(55,57,66,1);
+}
+.Nom_Pr_nom___Fonction_dt_Class {
+	position: absolute;
+	left: 1056.5px;
+	top: 1302px;
+	overflow: visible;
+	width: 447px;
+	height: 52px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(55,57,66,1);
+}
+.Nom_Pr_nom___Fonction_du_Class {
+	position: absolute;
+	left: 737.5px;
+	top: 1910px;
+	overflow: visible;
+	width: 447px;
+	height: 52px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(55,57,66,1);
+}
+.Rectangle_121 {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 308px;
+	left: 0px;
+	top: 2114px;
+}
+.Rectangle_113_dw {
+	position: absolute;
+	overflow: visible;
+	width: 1753px;
+	height: 59px;
+	left: 0px;
+	top: 0px;
+}
+.Rectangle_114_dx {
+	position: absolute;
+	overflow: visible;
+	width: 179px;
+	height: 59px;
+	left: 1741px;
+	top: 0px;
+}
+.Rectangle_171 {
+	position: absolute;
+	overflow: visible;
+	width: 345px;
+	height: 59px;
+	left: 0px;
+	top: 0px;
+}
+.S_inscrire_dz_Class {
+	position: absolute;
+	left: 1742px;
+	top: 17px;
+	overflow: visible;
+	width: 179px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Se_connecter_d_Class {
+	position: absolute;
+	left: 1520px;
+	top: 17px;
+	overflow: visible;
+	width: 215px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Entreprise_d_Class {
+	position: absolute;
+	left: 1350px;
+	top: 17px;
+	overflow: visible;
+	width: 135px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Certifications_Class {
+	position: absolute;
+	left: 1130px;
+	top: 17px;
+	overflow: visible;
+	width: 184px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Line_41_d {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 59px;
+	left: 1513.5px;
+	top: 0.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_75 {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 59px;
+	left: 183.5px;
+	top: 0.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Offres_d_Class {
+	position: absolute;
+	left: 1006px;
+	top: 17px;
+	overflow: visible;
+	width: 89px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.accueil_d_Class {
+	position: absolute;
+	left: 865px;
+	top: 17px;
+	overflow: visible;
+	width: 105px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Recruteurs_Class {
+	position: absolute;
+	left: 16px;
+	top: 17px;
+	overflow: visible;
+	width: 148px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Candidat_Class {
+	position: absolute;
+	left: 190px;
+	top: 17px;
+	overflow: visible;
+	width: 148px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
