@@ -7,7 +7,7 @@
     "url": "git+https://github.com/DaProclaima/worker_genius_frontend.git"
   },
   "license": "MIT",
-  "scripts": {
+  "scripts": {  
     "build": "yarn install && yarn start",
     "css-watch": "nodemon -e scss -x \"yarn run css-build\"",
     "css-build": "node-sass assets/scss/app.scss assets/css/app.css",
