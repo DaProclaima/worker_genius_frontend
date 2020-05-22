@@ -11,7 +11,7 @@ const path = require('path')
 class Server {
   constructor () {
     this.app = express()
-    this.port = 3000
+    this.port = process.env.PORT
   }
 
   // fecthArticle () {
@@ -36,6 +36,7 @@ class Server {
    * middleware
    */
   middleware () {
+    this.app.set('trust proxy', process.env.IP_ADDRESS)
     this.app.set('view engine', '.hbs')
     this.app.use('/public', express.static(path.join(__dirname, '../assets')))
     this.app.set('views', path.join(__dirname, '../views'))
