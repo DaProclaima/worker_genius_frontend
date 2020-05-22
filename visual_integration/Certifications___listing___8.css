@@ -1,0 +1,773 @@
+.mediaViewInfo {
+	--web-view-name: Certifications - listing – 8;
+	--web-view-id: Certifications___listing___8;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-navigate-on-keypress: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Certifications___listing___8;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+.Certifications___listing___8_Class {
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	left: 50%;
+	top: 50%;
+	width: 1920px;
+	height: 1073px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Certifications - listing – 8;
+	--web-view-id: Certifications___listing___8;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-navigate-on-keypress: true;
+	--web-enable-deep-linking: true;
+}
+.Certification_Class {
+	position: absolute;
+	left: 0px;
+	top: 99px;
+	overflow: hidden;
+	width: 1921px;
+	height: 90px;
+	text-align: center;
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 80px;
+	color: rgba(55,57,66,1);
+}
+.Line_55 {
+	overflow: visible;
+	position: absolute;
+	width: 219px;
+	height: 5px;
+	left: 853.5px;
+	top: 189.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Rectangle_129 {
+	position: absolute;
+	overflow: visible;
+	width: 153px;
+	height: 15px;
+	left: 1169px;
+	top: 44px;
+}
+.Ellipse_2 {
+	position: absolute;
+	overflow: visible;
+	width: 18px;
+	height: 18px;
+	left: 1787px;
+	top: 33px;
+}
+.Rectangle_113 {
+	position: absolute;
+	overflow: visible;
+	width: 1829px;
+	height: 59px;
+	left: 0px;
+	top: 0px;
+}
+.Rectangle_114 {
+	position: absolute;
+	overflow: visible;
+	width: 115px;
+	height: 59px;
+	left: 1805px;
+	top: 0px;
+}
+.Line_41 {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 59px;
+	left: 1718.5px;
+	top: 0.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.noun_Paper_Airplane_12136_Class {
+	position: absolute;
+	width: 48.048px;
+	height: 30.498px;
+	left: 1736.961px;
+	top: 14px;
+	overflow: visible;
+}
+.Group_5_Class {
+	position: absolute;
+	width: 48.048px;
+	height: 30.498px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_1 {
+	overflow: visible;
+	position: absolute;
+	width: 48.048px;
+	height: 30.497px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_3 {
+	overflow: visible;
+	position: absolute;
+	width: 11.129px;
+	height: 11.335px;
+	transform: matrix(1,0,0,1,1888.2309,32.2256) rotate(45deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Ellipse_6 {
+	position: absolute;
+	overflow: visible;
+	width: 46px;
+	height: 46px;
+	left: 1818px;
+	top: 7px;
+}
+.Entreprise_Class {
+	position: absolute;
+	left: 1555px;
+	top: 17px;
+	overflow: visible;
+	width: 135px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Certifications_Class {
+	position: absolute;
+	left: 1338px;
+	top: 17px;
+	overflow: visible;
+	width: 181px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Offres_Class {
+	position: absolute;
+	left: 1221px;
+	top: 17px;
+	overflow: visible;
+	width: 89px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.accueil_Class {
+	position: absolute;
+	left: 1080px;
+	top: 17px;
+	overflow: visible;
+	width: 105px;
+	height: 39px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+}
+.Rectangle_128 {
+	position: absolute;
+	overflow: visible;
+	width: 129px;
+	height: 15px;
+	left: 1364px;
+	top: 44px;
+}
+.Rectangle_4 {
+	position: absolute;
+	overflow: visible;
+	width: 359px;
+	height: 421px;
+	left: 781px;
+	top: 398px;
+}
+.Rectangle_189 {
+	position: absolute;
+	overflow: visible;
+	width: 359px;
+	height: 421px;
+	left: 781px;
+	top: 860px;
+}
+.Rectangle_116 {
+	position: absolute;
+	overflow: visible;
+	width: 359px;
+	height: 421px;
+	left: 1239px;
+	top: 398px;
+}
+.Rectangle_190 {
+	position: absolute;
+	overflow: visible;
+	width: 359px;
+	height: 421px;
+	left: 1239px;
+	top: 860px;
+}
+.Rectangle_118 {
+	position: absolute;
+	overflow: visible;
+	width: 359px;
+	height: 421px;
+	left: 323px;
+	top: 398px;
+}
+.Rectangle_188 {
+	position: absolute;
+	overflow: visible;
+	width: 359px;
+	height: 421px;
+	left: 323px;
+	top: 860px;
+}
+.markus_spiske_70Rir5vB96U_unsp_Class {
+	position: absolute;
+	width: 359px;
+	height: 272px;
+	left: 781px;
+	top: 398px;
+	overflow: visible;
+}
+.markus_spiske_70Rir5vB96U_unsp_ci_Class {
+	position: absolute;
+	width: 359px;
+	height: 272px;
+	left: 781px;
+	top: 860px;
+	overflow: visible;
+}
+.tim_bennett_OwvRB_M3GwE_unspla_Class {
+	position: absolute;
+	width: 359px;
+	height: 272px;
+	left: 1239px;
+	top: 398px;
+	overflow: visible;
+}
+.tim_bennett_OwvRB_M3GwE_unspla_ck_Class {
+	position: absolute;
+	width: 359px;
+	height: 272px;
+	left: 1239px;
+	top: 860px;
+	overflow: visible;
+}
+.fabian_grohs_dC6Pb2JdAqs_unspl_Class {
+	position: absolute;
+	width: 359px;
+	height: 272px;
+	left: 323px;
+	top: 398px;
+	overflow: visible;
+}
+.fabian_grohs_dC6Pb2JdAqs_unspl_cm_Class {
+	position: absolute;
+	width: 359px;
+	height: 272px;
+	left: 323px;
+	top: 860px;
+	overflow: visible;
+}
+.PHP_Class {
+	position: absolute;
+	left: 340px;
+	top: 693px;
+	overflow: hidden;
+	width: 322px;
+	height: 35px;
+	text-align: left;
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(55,57,66,1);
+}
+.Dificult____Class {
+	position: absolute;
+	left: 340px;
+	top: 742px;
+	overflow: visible;
+	width: 322px;
+	height: 35px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(55,57,66,1);
+}
+.Dur_e___Class {
+	position: absolute;
+	left: 340px;
+	top: 777px;
+	overflow: visible;
+	width: 322px;
+	height: 35px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(55,57,66,1);
+}
+.Dur_e___cq_Class {
+	position: absolute;
+	left: 800px;
+	top: 777px;
+	overflow: visible;
+	width: 322px;
+	height: 35px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(55,57,66,1);
+}
+.Dur_e___cr_Class {
+	position: absolute;
+	left: 1258px;
+	top: 777px;
+	overflow: visible;
+	width: 322px;
+	height: 35px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(55,57,66,1);
+}
+.Dificult____cs_Class {
+	position: absolute;
+	left: 800px;
+	top: 742px;
+	overflow: visible;
+	width: 322px;
+	height: 35px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(55,57,66,1);
+}
+.Dificult____ct_Class {
+	position: absolute;
+	left: 1258px;
+	top: 742px;
+	overflow: visible;
+	width: 322px;
+	height: 35px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(55,57,66,1);
+}
+.JAVA_Class {
+	position: absolute;
+	left: 800px;
+	top: 693px;
+	overflow: hidden;
+	width: 322px;
+	height: 35px;
+	text-align: left;
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(55,57,66,1);
+}
+.D_veloppement_Mobile_Class {
+	position: absolute;
+	left: 1258px;
+	top: 693px;
+	overflow: hidden;
+	width: 322px;
+	height: 35px;
+	text-align: left;
+	font-family: Bebas Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	color: rgba(55,57,66,1);
+}
+.Rectangle_59 {
+	position: absolute;
+	overflow: visible;
+	width: 1296px;
+	height: 90px;
+	left: 302px;
+	top: 257px;
+}
+.noun_Loupe_1713458_Class {
+	position: absolute;
+	width: 30.7px;
+	height: 30.96px;
+	left: 333.508px;
+	top: 287.638px;
+	overflow: visible;
+}
+.Camada_2_Class {
+	position: absolute;
+	width: 30.7px;
+	height: 30.96px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Your_Icon_Class {
+	position: absolute;
+	width: 30.7px;
+	height: 30.96px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Path_14 {
+	overflow: visible;
+	position: absolute;
+	width: 11.676px;
+	height: 11.647px;
+	left: 19.024px;
+	top: 19.313px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_15 {
+	overflow: visible;
+	position: absolute;
+	width: 23.048px;
+	height: 23.048px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Recherche_Class {
+	position: absolute;
+	left: 397px;
+	top: 286px;
+	overflow: visible;
+	width: 236px;
+	height: 30px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(55,57,66,1);
+}
+.Cat_gorie_Class {
+	position: absolute;
+	left: 1261px;
+	top: 286px;
+	overflow: visible;
+	width: 236px;
+	height: 30px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(55,57,66,1);
+}
+.Difficult__Class {
+	position: absolute;
+	left: 889px;
+	top: 286px;
+	overflow: visible;
+	width: 134px;
+	height: 30px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(55,57,66,1);
+}
+.Dur_e_Class {
+	position: absolute;
+	left: 1089px;
+	top: 286px;
+	overflow: visible;
+	width: 104px;
+	height: 30px;
+	text-align: left;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(55,57,66,1);
+}
+.Line_70 {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 88px;
+	left: 866.08px;
+	top: 258.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_71 {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 88px;
+	left: 1060.5px;
+	top: 257.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_76 {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 88px;
+	left: 1228.5px;
+	top: 257.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Path_3_c {
+	overflow: visible;
+	position: absolute;
+	width: 11.129px;
+	height: 11.335px;
+	transform: matrix(1,0,0,1,1030.2317,293.2259) rotate(225deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Path_17 {
+	overflow: visible;
+	position: absolute;
+	width: 11.129px;
+	height: 11.335px;
+	transform: matrix(1,0,0,1,1186.2317,293.2258) rotate(225deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Path_24 {
+	overflow: visible;
+	position: absolute;
+	width: 11.129px;
+	height: 11.335px;
+	transform: matrix(1,0,0,1,1541.2317,293.2258) rotate(225deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Vous_pouvez_s_lectionner_jusqu_Class {
+	position: absolute;
+	left: 588px;
+	top: 197px;
+	overflow: visible;
+	width: 751px;
+	height: 30px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(55,57,66,1);
+}
+.Rectangle_146 {
+	position: absolute;
+	overflow: visible;
+	width: 220px;
+	height: 68px;
+	left: 55px;
+	top: 99px;
+}
+.Rectangle_213 {
+	position: absolute;
+	overflow: visible;
+	width: 220px;
+	height: 68px;
+	left: 1627px;
+	top: 99px;
+}
+.Retour_Class {
+	position: absolute;
+	left: 115px;
+	top: 116px;
+	overflow: visible;
+	width: 123px;
+	height: 35px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(55,57,66,1);
+}
+.Valider_Class {
+	position: absolute;
+	left: 1676px;
+	top: 118px;
+	overflow: visible;
+	width: 123px;
+	height: 35px;
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(55,57,66,1);
+}
+.Path_9 {
+	overflow: visible;
+	position: absolute;
+	width: 20.044px;
+	height: 20.155px;
+	transform: matrix(1,0,0,1,81.3431,122.462) rotate(-45deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Group_20_Class {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 651px;
+	top: 384px;
+	overflow: visible;
+}
+.Ellipse_30 {
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	height: 50px;
+	left: 0px;
+	top: 0px;
+}
+.Path_23 {
+	overflow: visible;
+	position: absolute;
+	width: 29.677px;
+	height: 24.535px;
+	left: 9.967px;
+	top: 12.932px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_67_Class {
+	transform: matrix(1,0,0,1,618,756.9999) rotate(45deg);
+	transform-origin: center;
+	position: absolute;
+	width: 29px;
+	height: 29px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Line_57 {
+	overflow: visible;
+	position: absolute;
+	width: 46.012px;
+	height: 46.012px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_58 {
+	overflow: visible;
+	position: absolute;
+	width: 29px;
+	height: 29px;
+	transform: translate(-24.748px, -522.552px) matrix(1,0,0,1,401.4999,337.4999) rotate(90deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Group_68_Class {
+	transform: matrix(1,0,0,1,1086.0001,756.9999) rotate(45deg);
+	transform-origin: center;
+	position: absolute;
+	width: 29px;
+	height: 29px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Line_57_dp {
+	overflow: visible;
+	position: absolute;
+	width: 46.012px;
+	height: 46.012px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_58_dq {
+	overflow: visible;
+	position: absolute;
+	width: 29px;
+	height: 29px;
+	transform: translate(-24.748px, -522.552px) matrix(1,0,0,1,401.4999,337.4999) rotate(90deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+.Group_69_Class {
+	transform: matrix(1,0,0,1,1545.0001,756.9999) rotate(45deg);
+	transform-origin: center;
+	position: absolute;
+	width: 29px;
+	height: 29px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Line_57_ds {
+	overflow: visible;
+	position: absolute;
+	width: 46.012px;
+	height: 46.012px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Line_58_dt {
+	overflow: visible;
+	position: absolute;
+	width: 29px;
+	height: 29px;
+	transform: translate(-24.748px, -522.552px) matrix(1,0,0,1,401.4999,337.4999) rotate(90deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
