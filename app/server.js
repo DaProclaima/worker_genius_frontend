@@ -52,6 +52,10 @@ class Server {
     this.app.use(bodyParser.urlencoded({ 'extended': true }))
     this.app.use(bodyParser.json())
 
+    this.app.get('/', (_, res) => {
+      res.redirect('/home')
+    })
+
     this.app.get('/home', async (_, res) => {
       // const articles = await this.fecthArticle()
       const title = 'Bienvenue !'
