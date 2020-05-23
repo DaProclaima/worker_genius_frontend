@@ -36,7 +36,6 @@ class Server {
    * middleware
    */
   middleware () {
-    this.app.set('trust proxy', process.env.IP_ADDRESS)
     this.app.set('view engine', '.hbs')
     this.app.use('/public', express.static(path.join(__dirname, '../assets')))
     this.app.set('views', path.join(__dirname, '../views'))
