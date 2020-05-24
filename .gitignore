@@ -4,5 +4,4 @@ node_modules
 yarn.lock
 .env
 .env.production
-.env.development
 yarn-error.log

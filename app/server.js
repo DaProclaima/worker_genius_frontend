@@ -59,6 +59,12 @@ class Server {
       res.render('home', { title: title })
     })
 
+    this.app.get('/certification', async (_, res) => {
+      // const articles = await this.fecthArticle()
+      const title = 'Bienvenue !'
+      res.render('certification', { title: title })
+    })
+
     this.app.use(bodyParser.urlencoded({ 'extended': true }))
     this.app.use(bodyParser.json())
   }
