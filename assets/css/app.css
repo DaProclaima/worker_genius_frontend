@@ -371,6 +371,7 @@ template {
   --purple-dark: #302A75;
   --purple-mid: #382D91;
   --purle-ligth: #5E50A6;
+  --grey-mid: #707070;
   --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
@@ -9864,6 +9865,9 @@ a {
   a:hover {
     text-decoration: underline; }
 
+.grey-text {
+  color: #707070; }
+
 /* ----------------------------------------- */
 /*                ~ LAYOUT ~                 */
 /* ----------------------------------------- */
@@ -9876,6 +9880,10 @@ a {
 
 html {
   position: absolute; }
+
+.main-layout {
+  display: flex;
+  flex-direction: column; }
 
 /* ----------------------------------------- */
 /*              ~ COMPONENTS ~               */
@@ -9930,7 +9938,7 @@ nav {
 	transform: translateX(0px);
 }*/
 footer {
-  position: relative;
+  position: static;
   width: 100%;
   height: 10%;
   bottom: 0; }

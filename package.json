@@ -1,7 +1,7 @@
 {
   "name": "worker_genius_frontend",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.0",
+  "main": "app.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DaProclaima/worker_genius_frontend.git"
@@ -11,10 +11,10 @@
     "build": "yarn install && yarn start",
     "css-watch": "nodemon -e scss -x \"yarn run css-build\"",
     "css-build": "node-sass assets/scss/app.scss assets/css/app.css",
-    "start": "eslint .eslintrc.js .eslintignore ./app/ index.js  && node -r dotenv/config index.js dotenv_config_path=./.env.production",
-    "dev": "eslint .eslintrc.js .eslintignore ./app/ index.js && nodemon -r  dotenv/config index.js dotenv_config_path=./.env.development",
+    "start": "eslint .eslintrc.js .eslintignore ./app/ app.js  && node -r dotenv/config app.js dotenv_config_path=./.env",
+    "dev": "eslint .eslintrc.js .eslintignore ./app/ app.js && nodemon -r  dotenv/config app.js dotenv_config_path=./.env",
     "test": "mocha",
-    "lint": "eslint .eslintrc.js .eslintignore ./app/ index.js"
+    "lint": "eslint .eslintrc.js .eslintignore ./app/ app.js"
   },
   "dependencies": {
     "body-parser": "1.18.3",
@@ -29,12 +29,12 @@
     "helmet": "^3.22.0",
     "lodash": "^4.17.15",
     "mpath": "^0.5.1",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
     "@chenfengyuan/datepicker": "^1.0.9",
-    "@popperjs/core": "^2.1.1",
-    "bootstrap": "^4.4.1",
+    "bootstrap": "^4.5.0",
     "eslint": "^6.8.0",
     "eslint-config-standard": "11.0.0",
     "eslint-plugin-import": "2.12.0",
@@ -42,7 +42,6 @@
     "eslint-plugin-promise": "3.8.0",
     "eslint-plugin-standard": "3.1.0",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.4.1",
     "mocha": "^7.1.2",
     "node-sass": "^4.13.1",
     "nodemon": "^2.0.2",
