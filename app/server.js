@@ -36,7 +36,6 @@ class Server {
    * middleware
    */
   middleware () {
-    this.app.set('trust proxy', process.env.IP_ADDRESS)
     this.app.set('view engine', '.hbs')
     this.app.use('/public', express.static(path.join(__dirname, '../assets')))
     this.app.set('views', path.join(__dirname, '../views'))
@@ -53,12 +52,17 @@ class Server {
     this.app.use(bodyParser.urlencoded({ 'extended': true }))
     this.app.use(bodyParser.json())
 
+    this.app.get('/', (_, res) => {
+      res.redirect('/home')
+    })
+
     this.app.get('/home', async (_, res) => {
       // const articles = await this.fecthArticle()
       const title = 'Bienvenue !'
       res.render('home', { title: title })
     })
 
+    // TODO: WIll this route will be renamed in function of specific test's name in keeping the /certification prefix (ex: certification/php-developer)
     this.app.get('/certification', async (_, res) => {
       // const articles = await this.fecthArticle()
       const title = 'Bienvenue !'
