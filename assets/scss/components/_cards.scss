@@ -1,11 +1,11 @@
 #card_list {
 
+    max-width: 75rem;
     height: 38rem;
     margin: auto;
-    justify-content: center !important;
 
     .card {
-        max-width: 20rem;
+        width: 16rem;
         max-height: 27rem;
         border-radius: 20px;
         border: 5px solid #302A75;

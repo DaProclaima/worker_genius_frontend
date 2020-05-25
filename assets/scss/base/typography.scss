@@ -26,3 +26,7 @@ a {
     text-decoration: underline;
   }
 }
+
+.grey-text {
+  color: map-get($colors, grey-mid );
+}
