@@ -20,12 +20,27 @@
 }
 
 hr{
-  width: 28%;
   margin: auto;
   margin-top: 0rem;
   max-height: 1rem;
   border: 2px solid #302A75;
   text-align: center;
+}
+
+.underline {
+  width: 28%;
+}
+
+.underline-2 {
+  width: 43%;
+}
+
+.btn-home-1 {
+  margin: auto;
+  padding: 10px;
+  max-width: 5rem;
+  max-height: 2rem;
+  border-radius: 50%;
 }
 
 }
