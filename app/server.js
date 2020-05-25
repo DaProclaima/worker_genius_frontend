@@ -69,6 +69,19 @@ class Server {
       res.render('certification', { title: title })
     })
 
+    this.app.get('/offres-emploi', async (_, res) => {
+      // const articles = await this.fecthArticle()
+      const title = 'Offres d’emploi !'
+      res.render('job-offers', { 
+        title: title,
+        jobOffers: [
+          {
+            title: 'Développeur PHP'
+          }
+        ]
+      })
+    })
+
     this.app.use(bodyParser.urlencoded({ 'extended': true }))
     this.app.use(bodyParser.json())
   }
