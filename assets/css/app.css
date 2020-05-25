@@ -51,7 +51,9 @@ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+  width: 100%;
+  height: 100%; }
 
 /* Sections
    ========================================================================== */
@@ -59,7 +61,9 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 0; }
+  margin: 0;
+  width: 100%;
+  height: 100%; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -10075,12 +10079,13 @@ li.box-split-bar {
     border-radius: 50%; }
 
 #certification-page {
+  position: relative;
   background: #382D91;
   margin: auto;
   justify-content: center;
   align-items: center; }
-  #certification-page .container {
-    height: 38rem; }
+  #certification-page .container-certification {
+    height: auto; }
   #certification-page .certification-title {
     margin-bottom: 4rem;
     padding-top: 3rem;
@@ -10090,9 +10095,9 @@ li.box-split-bar {
     text-align: center;
     color: #ffffff; }
   #certification-page .description {
+    min-height: 42rem;
     border-radius: 0px 15px 15px 0px;
     background-color: #ffffff;
-    max-height: 81%;
     padding: 20px; }
   #certification-page span {
     font-size: 22px;
@@ -10106,11 +10111,36 @@ li.box-split-bar {
     font-size: 25px;
     text-transform: uppercase; }
   #certification-page .form-control {
-    border-radius: 15px 0px 0px 15px; }
+    border-radius: 15px; }
   #certification-page textarea {
     resize: none; }
+  #certification-page .submit-container {
+    margin-top: 10px;
+    padding: 20px;
+    height: 7.5rem;
+    background: #5E50A6;
+    border-radius: 15px; }
+    #certification-page .submit-container .md-form, #certification-page .submit-container .upload-form {
+      max-width: 20rem;
+      max-height: 2.5rem; }
+      #certification-page .submit-container .md-form .label-file, #certification-page .submit-container .upload-form .label-file {
+        cursor: pointer;
+        color: #ffffff;
+        font-weight: bold; }
+      #certification-page .submit-container .md-form .label-file:hover, #certification-page .submit-container .upload-form .label-file:hover {
+        color: #ccc; }
+      #certification-page .submit-container .md-form .input-file, #certification-page .submit-container .upload-form .input-file {
+        display: none; }
+    #certification-page .submit-container .btn-submit {
+      max-width: 10rem;
+      max-height: 3rem;
+      border-radius: 100px;
+      color: #5E50A6;
+      background: #ffffff; }
 
 /* Timer */
 #countdown {
-  height: 5rem;
-  color: #ffffff; }
+  height: 4rem;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center; }

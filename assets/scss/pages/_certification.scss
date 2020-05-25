@@ -1,12 +1,12 @@
 #certification-page {
-
+    position: relative;
     background: #382D91;
     margin: auto;
     justify-content: center;
     align-items: center;
 
-    .container {
-        height: 38rem;
+    .container-certification {
+        height: auto;
     }
 
     .certification-title {
@@ -20,9 +20,9 @@
     }
 
     .description {
+        min-height: 42rem;
         border-radius: 0px 15px 15px 0px;
         background-color: #ffffff;
-        max-height: 81%;
         padding: 20px;
     }
 
@@ -44,17 +44,54 @@
     }
 
     .form-control {
-        border-radius: 15px 0px 0px 15px;
+        border-radius: 15px;
     }
 
     textarea {
         resize: none;
     }
 
+    .submit-container {
+        margin-top: 10px;
+        padding: 20px;
+        height: 7.5rem;
+        background: #5E50A6;
+        border-radius: 15px;
+
+        .md-form, .upload-form {
+            max-width: 20rem;
+            max-height: 2.5rem;
+
+            .label-file {
+                cursor: pointer;
+                color: #ffffff;
+                font-weight: bold;
+            }
+
+            .label-file:hover {
+                color: #ccc;
+            }
+
+            .input-file {
+                display: none;
+            }
+        }
+
+        .btn-submit {
+            max-width: 10rem;
+            max-height: 3rem;
+            border-radius: 100px;
+            color: #5E50A6;
+            background: #ffffff;
+        }
+    }
+
 }
 
 /* Timer */
 #countdown {
-    height: 5rem;
+    height: 4rem;
+    font-size: 20px;
     color: #ffffff;
+    text-align: center;
 }
