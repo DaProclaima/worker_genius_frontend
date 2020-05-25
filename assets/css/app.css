@@ -367,6 +367,7 @@ template {
   --purple-dark: #302A75;
   --purple-mid: #382D91;
   --purle-ligth: #5E50A6;
+  --grey-mid: #707070;
   --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
@@ -9860,6 +9861,9 @@ a {
   a:hover {
     text-decoration: underline; }
 
+.grey-text {
+  color: #707070; }
+
 /* ----------------------------------------- */
 /*                ~ LAYOUT ~                 */
 /* ----------------------------------------- */
@@ -9872,6 +9876,10 @@ a {
 
 html {
   position: absolute; }
+
+.main-layout {
+  display: flex;
+  flex-direction: column; }
 
 /* ----------------------------------------- */
 /*              ~ COMPONENTS ~               */
@@ -9926,7 +9934,7 @@ nav {
 	transform: translateX(0px);
 }*/
 footer {
-  position: relative;
+  position: static;
   width: 100%;
   height: 10%;
   bottom: 0; }
@@ -9999,11 +10007,11 @@ li.box-split-bar {
     transform: translate(-50%, -50%); }
 
 #card_list {
+  max-width: 75rem;
   height: 38rem;
-  margin: auto;
-  justify-content: center !important; }
+  margin: auto; }
   #card_list .card {
-    max-width: 20rem;
+    width: 16rem;
     max-height: 27rem;
     border-radius: 20px;
     border: 5px solid #302A75;
@@ -10058,9 +10066,59 @@ li.box-split-bar {
     color: #000000;
     text-transform: uppercase; }
   .title-container hr {
-    width: 28%;
     margin: auto;
     margin-top: 0rem;
     max-height: 1rem;
     border: 2px solid #302A75;
     text-align: center; }
+  .title-container .underline {
+    width: 28%; }
+  .title-container .underline-2 {
+    width: 43%; }
+  .title-container .btn-home-1 {
+    margin: auto;
+    padding: 10px;
+    max-width: 5rem;
+    max-height: 2rem;
+    border-radius: 50%; }
+
+#certification-page {
+  background: #382D91;
+  margin: auto;
+  justify-content: center;
+  align-items: center; }
+  #certification-page .container {
+    height: 38rem; }
+  #certification-page .certification-title {
+    margin-bottom: 4rem;
+    padding-top: 3rem;
+    height: 3rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff; }
+  #certification-page .description {
+    border-radius: 0px 15px 15px 0px;
+    background-color: #ffffff;
+    max-height: 81%;
+    padding: 20px; }
+  #certification-page span {
+    font-size: 22px;
+    text-align: center; }
+  #certification-page p {
+    top: 0;
+    font-size: 18px;
+    text-align: justify; }
+  #certification-page b {
+    margin-bottom: 3rem;
+    font-size: 25px;
+    text-transform: uppercase; }
+  #certification-page .form-control {
+    border-radius: 15px 0px 0px 15px; }
+  #certification-page textarea {
+    resize: none; }
+
+/* Timer */
+#countdown {
+  height: 5rem;
+  color: #ffffff; }
