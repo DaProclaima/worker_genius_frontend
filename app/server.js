@@ -62,7 +62,6 @@ class Server {
       res.render('home', { title: title })
     })
 
-    // TODO: WIll this route will be renamed in function of specific test's name in keeping the /certification prefix (ex: certification/php-developer)
     this.app.get('/certification', async (_, res) => {
       // const articles = await this.fecthArticle()
       const title = 'Bienvenue !'
