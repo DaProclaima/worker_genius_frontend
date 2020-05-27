@@ -2,7 +2,7 @@ node_modules
 .DS_Store
 .idea
 yarn.lock
-.env.example
+.env
 .env.production
 .env.development
 yarn-error.log

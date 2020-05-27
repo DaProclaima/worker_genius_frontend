@@ -81,6 +81,12 @@ class Server {
       })
     })
 
+    this.app.get('/chat', async (_, res) => {
+      // const articles = await this.fecthArticle()
+      const title = 'Bienvenue !'
+      res.render('chat', { title: title })
+    })
+
     this.app.use(bodyParser.urlencoded({ 'extended': true }))
     this.app.use(bodyParser.json())
   }
