@@ -1,4 +1,4 @@
-  #chat {
+ #chat {
       overflow: auto;
   }
 
@@ -15,8 +15,15 @@
     width: 70rem;
   }
   
+  .small {
+    max-width: 30%;
+    color: #ccc;
+  }
+
   .text-small {
+    max-height: 3rem;
     font-size: 0.9rem;
+    color: #000;
   }
   
   .messages-box,
@@ -64,4 +71,8 @@
   input[type="text"]::before,
   input[type="text"]::after {
     outline:none!important;
+  }
+
+  h6.chat-name{
+    color: #000;
   }

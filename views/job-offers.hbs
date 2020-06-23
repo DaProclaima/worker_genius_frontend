@@ -1,6 +1,5 @@
-<div class="" id="job-offers-page">
-  <section>
-    <div class="title-container">
+<div id="job-offers-page" class="container-fluid job-offers">
+    <!--<div class="title-container">
       <h2 class="homepage-title">offres d’emploi</h2>
       <hr class="underline">
     </div>
@@ -44,6 +43,35 @@
       {{> components/card-job-offer}}
       {{> components/card-job-offer}}
       {{> components/card-job-offer}}
-    </div>
-  </section>
+    </div>-->
+
+
+  <div class="grid">
+    <div class="element-item">{{> components/card-job-offer}}</div>
+    <div class="element-item">{{> components/card-job-offer}}</div>
+    <div class="element-item">{{> components/card-job-offer}}</div>
+    <div class="element-item">{{> components/card-job-offer}}</div>
+    <div class="element-item">{{> components/card-job-offer}}</div>
+    <div class="element-item">{{> components/card-job-offer}}</div>
+    <div class="element-item">{{> components/card-job-offer}}</div>
+    <div class="element-item">{{> components/card-job-offer}}</div>
+    <div class="element-item">{{> components/card-job-offer}}</div>
+    <div class="element-item">{{> components/card-job-offer}}</div>
+    <div class="element-item">{{> components/card-job-offer}}</div>
+    <div class="element-item">{{> components/card-job-offer}}</div>
+  </div>
+
 </div>
+
+<script type="text/javascript">
+
+$('.grid').isotope({
+  itemSelector: '.element-item',
+  masonry: {
+    columnWidth: 100,
+    gutter: 10,
+    horizontalOrder: true
+  }
+});
+
+</script>
