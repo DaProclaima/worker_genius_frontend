@@ -1,6 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const exphbs = require('express-handlebars')
+const morgan = require('morgan')
 const path = require('path')
 // const fetch = require('node-fetch')
 
@@ -14,28 +15,11 @@ class Server {
     this.port = process.env.PORT
   }
 
-  // fecthArticle () {
-  //   const article = fetch('http://localhost:3000/article/list/')
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       return data
-  //     })
-  //   return article
-  // }
-
-  // showArtice (id) {
-  //   const article = fetch(`http://localhost:3000/article/show/${id}`)
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       return data
-  //     })
-  //   return article
-  // }
-
   /**
    * middleware
    */
   middleware () {
+    this.app.use(morgan('combined'))
     this.app.set('view engine', '.hbs')
     this.app.use('/public', express.static(path.join(__dirname, '../assets')))
     this.app.set('views', path.join(__dirname, '../views'))
@@ -71,7 +55,7 @@ class Server {
     this.app.get('/offres', async (_, res) => {
       // const articles = await this.fecthArticle()
       const title = 'Offres d’emploi !'
-      res.render('job-offers', { 
+      res.render('job-offers', {
         title: title,
         jobOffers: [
           {
