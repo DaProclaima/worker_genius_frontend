@@ -52,7 +52,7 @@ class Server {
       res.render('certification', { title: title })
     })
 
-    this.app.get('/offres', async (_, res) => {
+    this.app.get('/job-offers', async (_, res) => {
       // const articles = await this.fecthArticle()
       const title = 'Offres d’emploi !'
       res.render('job-offers', {

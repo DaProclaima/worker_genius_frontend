@@ -10034,7 +10034,7 @@ li.box-split-bar {
   height: 38rem;
   margin: auto; }
   #card_list .card {
-    width: 16rem;
+    max-width: 22rem;
     max-height: 27rem;
     border-radius: 20px;
     border: 5px solid #302A75;
@@ -10042,6 +10042,9 @@ li.box-split-bar {
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
     /* Transition de type ease */
+    -webkit-box-shadow: 0px 0px 91px -23px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 91px -23px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 91px -23px rgba(0, 0, 0, 0.5);
     /* Card image */
     /* ----- Card body ----- */
     /* Card title */
@@ -10050,7 +10053,7 @@ li.box-split-bar {
       max-height: 18rem;
       object-fit: cover; }
     #card_list .card img {
-      border-radius: 15px; }
+      border-radius: 14px; }
     #card_list .card .card-body {
       max-height: 2.8rem !important; }
     #card_list .card .card-title {
@@ -10185,8 +10188,14 @@ li.box-split-bar {
   margin: auto;
   width: 70rem; }
 
+.small {
+  max-width: 30%;
+  color: #ccc; }
+
 .text-small {
-  font-size: 0.9rem; }
+  max-height: 3rem;
+  font-size: 0.9rem;
+  color: #000; }
 
 .messages-box,
 .chat-box {
@@ -10224,3 +10233,29 @@ input[type="text"]:focus,
 input[type="text"]::before,
 input[type="text"]::after {
   outline: none !important; }
+
+h6.chat-name {
+  color: #000; }
+
+.grid {
+  max-width: 100%; }
+
+.job-offers {
+  background: #fff !important; }
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* ---- .grid-item ---- */
+.grid-item {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  border-color: rgba(0, 0, 0, 0.7); }
+
+.grid-item--width2 {
+  width: 200px; }

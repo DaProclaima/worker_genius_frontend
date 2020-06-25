@@ -2,10 +2,7 @@
   "name": "worker_genius_frontend",
   "version": "0.0.0",
   "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DaProclaima/worker_genius_frontend.git"
-  },
+  "repository": "git+https://github.com/DaProclaima/worker_genius_frontend.git",
   "license": "MIT",
   "scripts": {
     "build": "yarn install && yarn start",
@@ -34,7 +31,8 @@
     "morgan": "^1.10.0",
     "mpath": "^0.5.1",
     "node-fetch": "^2.6.0",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "pug": "^3.0.0"
   },
   "devDependencies": {
     "@chenfengyuan/datepicker": "^1.0.9",
@@ -56,5 +54,5 @@
     "url": "https://github.com/DaProclaima/worker_genius_frontend/issues"
   },
   "homepage": "https://github.com/DaProclaima/worker_genius_frontend#readme",
-  "author": ""
+  "author": "jbswizz75 <jb.veesler@gmail.com>"
 }
