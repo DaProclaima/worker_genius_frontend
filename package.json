@@ -6,8 +6,9 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn install && yarn start",
-    "css-watch": "nodemon -e scss -x \"yarn run css-build\"",
-    "css-build": "node-sass assets/scss/app.scss assets/css/app.css",
+    "css-watch": "sass --watch assets/scss/app.scss:assets/css/app.css",
+    "sass-watch": "(rm -f assets/css/app.css) & yarn css-watch",
+    "css-build": "sass assets/scss/app.scss assets/css/app.css",
     "start": "eslint .eslintrc.js .eslintignore ./app/ app.js  && node -r dotenv/config app.js dotenv_config_path=./.env",
     "dev": "eslint .eslintrc.js .eslintignore ./app/ app.js && nodemon -r  dotenv/config app.js dotenv_config_path=./.env",
     "test": "mocha",
