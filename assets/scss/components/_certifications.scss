@@ -1,0 +1,96 @@
+/* -------------------- CERTIFICATIONS PAGE --------------------*/
+
+/* // MARGINS // */
+
+.top-100 {
+  margin-top: 100px;
+}
+
+.top-50 {
+  margin-top: 50px;
+}
+
+.top-20 {
+  margin-top: 20px;
+}
+
+/* ----------------------------------------*/
+
+/* SEARCH BAR */
+
+/*
+* INPUT AND ICON: Search
+*/
+
+input.search_certifications {
+  height: 55px;
+  border-top: 2px solid #382D91;
+  border-bottom: 2px solid #382D91;
+  border-left: none;
+  border-right: none;
+}
+
+span.btn_submit_certifications{
+  border-radius: 50px;
+  border-top: 2px solid #382D91;
+  border-bottom: 2px solid #382D91;
+  border-right: none;
+  border-left: 2px solid #382D91;
+  background: #fff;
+}
+
+.submit-icon-color-certifications {
+  color: #382D91;
+}
+
+
+/*
+* FILTERS: Difficulty, Time and Category
+*/
+
+select.filters_difficulty_certifications {
+  border-top: 2px solid #382D91;
+  border-bottom: 2px solid #382D91;
+  border-left: 2px solid #382D91;
+  border-right: none;
+}
+
+select.filters_time_certifications {
+  border-top: 2px solid #382D91;
+  border-bottom: 2px solid #382D91;
+  border-left: 2px solid #382D91;
+  border-right: none;
+}
+
+select.filters_category_certifications {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 2px solid #382D91;
+}
+
+/* ----------------------------------------*/
+
+/* CARDS */
+
+div.card_certifications {
+  border: none!important;
+}
+
+img.card-img-certifications {
+  border-top: 2px solid #382D91;
+  border-bottom: none;
+  border-left: 2px solid #382D91;
+  border-right: 2px solid #382D91;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-block {
+  padding: 5px;
+  border-top: none;
+  border-bottom: 2px solid #382D91;
+  border-left: 2px solid #382D91;
+  border-right: 2px solid #382D91;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}

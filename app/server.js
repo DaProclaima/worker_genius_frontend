@@ -3,8 +3,14 @@ const bodyParser = require('body-parser')
 const exphbs = require('express-handlebars')
 const morgan = require('morgan')
 const path = require('path')
+const dotenv = require('dotenv')
+// const axios = require('axios')
 // const fetch = require('node-fetch')
-
+dotenv.config()
+// const proxy = axios({
+//   host: 'localhost', // TODO or env.process.API_HOST
+//   port: 3010 // TODO or env.process.API_PORT
+// })
 /**
  * Server
  * @Class
@@ -12,7 +18,7 @@ const path = require('path')
 class Server {
   constructor () {
     this.app = express()
-    this.port = process.env.PORT
+    this.port = process.env.PORT || 3000
   }
 
   /**
@@ -63,6 +69,11 @@ class Server {
           }
         ]
       })
+    })
+
+    this.app.get('/candidate/login', async (_, res) => {
+      // const articles = await this.fecthArticle()
+      res.render('candidate-log')
     })
 
     this.app.get('/chat', async (_, res) => {
