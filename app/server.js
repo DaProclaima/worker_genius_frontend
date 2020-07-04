@@ -49,7 +49,7 @@ class Server {
     this.app.get('/home', async (_, res) => {
       // const articles = await this.fecthArticle()
       const title = 'Bienvenue !'
-      res.render('home', { title: title })
+      res.render('index', { title: title })
     })
 
     this.app.get('/certification', async (_, res) => {
@@ -58,10 +58,16 @@ class Server {
       res.render('certification', { title: title })
     })
 
-    this.app.get('/job-offers', async (_, res) => {
+    this.app.get('/certifications', async (_, res) => {
+      // const articles = await this.fecthArticle()
+      const title = 'certifications'
+      res.render('certifications', { title: title })
+    })
+
+    this.app.get('/offres', async (_, res) => {
       // const articles = await this.fecthArticle()
       const title = 'Offres d’emploi !'
-      res.render('job-offers', {
+      res.render('offres', {
         title: title,
         jobOffers: [
           {
@@ -71,15 +77,17 @@ class Server {
       })
     })
 
-    this.app.get('/candidate/login', async (_, res) => {
+    this.app.get('/candidat/log', async (_, res) => {
       // const articles = await this.fecthArticle()
-      res.render('candidate-log')
+      res.render('candidat-log', {
+        title: ' candidat: inscription | connexion'
+      })
     })
 
-    this.app.get('/chat', async (_, res) => {
+    this.app.get('/conversations', async (_, res) => {
       // const articles = await this.fecthArticle()
-      const title = 'Bienvenue !'
-      res.render('chat', { title: title })
+      const title = 'Conversations privées'
+      res.render('conversations', { title: title })
     })
 
     this.app.use(bodyParser.urlencoded({ 'extended': true }))

@@ -6,9 +6,10 @@
 // import 'font-awesome'
 // import './datepicker.min.js'
 
-// let $ = require('jquery')
+// let $ = require'jquery'
 // global.$ = global.jquery = $
-require('./datepicker.common.js')
-require('./datepicker.min.js')
-require('./fontawesome.js')
-require('@chenfengyuan/datepicker/i18n/datepicker.fr-FR')
+import './datepicker.common.js'
+import './datepicker.min.js'
+import './fontawesome.js'
+import '@chenfengyuan/datepicker/i18n/datepicker.fr-FR'
+import './helper'
