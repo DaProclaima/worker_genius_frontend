@@ -1,12 +1,16 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const exphbs = require('express-handlebars')
+var handlebars = require('handlebars');
+var layouts = require('handlebars-layouts');
 const morgan = require('morgan')
 const path = require('path')
 const dotenv = require('dotenv')
-// const axios = require('axios')
-// const fetch = require('node-fetch')
+const { api } = require('./middleware/webservices')
 dotenv.config()
+
+handlebars.registerHelper(layouts(handlebars));
+
 // const proxy = axios({
 //   host: 'localhost', // TODO or env.process.API_HOST
 //   port: 3010 // TODO or env.process.API_PORT
@@ -27,7 +31,7 @@ class Server {
   middleware () {
     this.app.use(morgan('combined'))
     this.app.set('view engine', '.hbs')
-    this.app.use('/public', express.static(path.join(__dirname, '../assets')))
+    this.app.use('/public' || process.env.public, express.static(path.join(__dirname, '../assets')))
     this.app.set('views', path.join(__dirname, '../views'))
     this.app.engine('.hbs', exphbs({
       helpers: {

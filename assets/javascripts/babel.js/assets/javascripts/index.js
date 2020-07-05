@@ -1,3 +1,5 @@
+'use strict';
+
 // import * as $ from 'jquery'
 // global.$ = global.jquery = $
 // import 'bootstrap'
@@ -13,7 +15,7 @@
 // require ('./datepicker.min.js')
 // require ('./fontawesome.js')
 // import '../../node_modules/@chenfengyuan/datepicker/i18n/datepicker.fr-FR'
-require('./helper')
-require ('./webservices.js')
-require('./conversations.js')
-require('./mobile_nav_mobile_button')
+require('./helper');
+require('./webservices.js');
+require('./conversations.js');
+require('./mobile_nav_mobile_button');
