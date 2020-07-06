@@ -1,4 +1,9 @@
-/* -------------------- CERTIFICATIONS PAGE --------------------*/
+/* -------------------- OFFERS PAGE --------------------*/
+
+*:focus, *:before, *:after, input:focus, input:before, input:after {
+  outline: 0 !important;
+  box-shadow: none;
+}
 
 /* // MARGINS // */
 
@@ -16,6 +21,19 @@
 
 /* ----------------------------------------*/
 
+/* TITLE */
+
+.certifications-title {
+  text-align: center;
+}
+
+.certifications-title-underline {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border: 2px solid #382D91;
+}
+
 /* SEARCH BAR */
 
 /*
@@ -30,7 +48,7 @@ input.search_certifications {
   border-right: none;
 }
 
-span.btn_submit_certifications{
+span.btn-submit-certifications{
   border-radius: 50px;
   border-top: 2px solid #382D91;
   border-bottom: 2px solid #382D91;
@@ -43,37 +61,201 @@ span.btn_submit_certifications{
   color: #382D91;
 }
 
-
 /*
-* FILTERS: Difficulty, Time and Category
+* FILTERS: Difficulties Dropdown Menu
 */
 
-select.filters_difficulty_certifications {
+.filters-difficulties-certifications {
+  height: 55px;
+  padding: 13px 15px;
   border-top: 2px solid #382D91;
   border-bottom: 2px solid #382D91;
   border-left: 2px solid #382D91;
   border-right: none;
 }
 
-select.filters_time_certifications {
+.filters-difficulties-certifications .dropdown-btn {
+  color: #382D91;
+  text-decoration: none;
+}
+
+.filters-difficulties-certifications .dropdown-btn:hover {
+  color: rgba(57, 45, 145, 0.45);
+}
+
+.filters-difficulties-certifications .dropdown-menu {
+  margin-top: 20px;
+  border: 2px solid #382D91;
+  border-radius: 15px;
+}
+
+.filters-difficulties-certifications .dropdown-item {
+  color: #382D91;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.filters-difficulties-certifications .dropdown-item:hover {
+  color: #fff;
+  background: #382D91;
+}
+
+
+.filters-difficulties-certifications .dropdown-menu {
+  margin-top: 20px;
+  border: 2px solid #382D91;
+  border-radius: 15px;
+}
+
+.filters-difficulties-certifications .dropdown-menu .dropdown-item .item-active {
+  color: #fff;
+  background: #382D91;
+}
+
+/*
+* FILTERS: Duration Dropdown Menu
+*/
+
+.filters-duration-certifications {
+  height: 55px;
+  padding: 13px 15px;
   border-top: 2px solid #382D91;
   border-bottom: 2px solid #382D91;
   border-left: 2px solid #382D91;
-  border-right: none;
+  border-right: 2px solid #382D91;
 }
 
-select.filters_category_certifications {
+.filters-duration-certifications .dropdown-btn {
+  color: #382D91;
+  text-decoration: none;
+}
+
+.filters-duration-certifications .dropdown-btn:hover {
+  color: rgba(57, 45, 145, 0.45);
+}
+
+.filters-duration-certifications .dropdown-menu {
+  margin-top: 20px;
+  border: 2px solid #382D91;
+  border-radius: 15px;
+}
+
+.filters-duration-certifications .dropdown-item {
+  color: #382D91;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.filters-duration-certifications .dropdown-item:hover {
+  color: #fff;
+  background: #382D91;
+}
+
+
+.filters-duration-certifications .dropdown-menu {
+  margin-top: 20px;
+  border: 2px solid #382D91;
+  border-radius: 15px;
+}
+
+.filters-duration-certifications .dropdown-menu .dropdown-item .item-active {
+  color: #fff;
+  background: #382D91;
+}
+
+/*
+* FILTERS: Category Dropdown Menu
+*/
+
+.filters-category-certifications {
+  height: 55px;
+  padding: 13px 15px;
+  border-top: 2px solid #382D91;
+  border-bottom: 2px solid #382D91;
+  border-left: none;
+  border-right: 2px solid #382D91;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  border: 2px solid #382D91;
 }
+
+.filters-category-certifications .dropdown-btn {
+  color: #382D91;
+  text-decoration: none;
+}
+
+.filters-category-certifications .dropdown-btn:hover {
+  color: rgba(57, 45, 145, 0.45);
+}
+
+.filters-category-certifications .dropdown-menu {
+  margin-top: 20px;
+  border: 2px solid #382D91;
+  border-radius: 15px;
+}
+
+.filters-category-certifications .dropdown-item {
+  color: #382D91;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.filters-category-certifications .dropdown-item:hover {
+  color: #fff;
+  background: #382D91;
+}
+
+
+.filters-category-certifications .dropdown-menu {
+  margin-top: 20px;
+  border: 2px solid #382D91;
+  border-radius: 15px;
+}
+
+.filters-category-certifications .dropdown-menu .dropdown-item .item-active {
+  color: #fff;
+  background: #382D91;
+}
+
 
 /* ----------------------------------------*/
 
 /* CARDS */
 
-div.card_certifications {
-  border: none!important;
+.grid {
+  width: 1280px;
+  height: 100%;
+  display: inline-flex;
+}
+
+.grid-item {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+/*
+* CARD
+*/
+
+div.card-certifications {
+  border: none;
+  border-radius: 15px;
+  /*box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19);*/
+}
+
+/*
+* CARD: Image
+*/
+
+.card {
+  max-width: 340px;
+  justify-content: center;
+}
+
+.card:hover {
+  cursor: pointer;
 }
 
 img.card-img-certifications {
@@ -85,6 +267,39 @@ img.card-img-certifications {
   border-top-right-radius: 15px;
 }
 
+.card-img-overlay:hover {
+  display: block;
+  position: absolute;
+  background: rgba(57, 45, 145, 0.45);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-img-overlay {
+  text-align: center;
+  color: #fff;
+}
+
+.card-img-overlay a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.801);
+}
+
+.card-img-overlay {
+  max-height: 65%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+* CARD: Text block
+*/
+
 .card-block {
   padding: 5px;
   border-top: none;
@@ -94,3 +309,113 @@ img.card-img-certifications {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+
+h4.card-title {
+  text-align: center;
+}
+
+/*
+* CARD: Badge
+*/
+
+.card-badge {
+  position:absolute;
+  top: -10px;
+  right: -5px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.danger_badge_offers {
+  background: #e90808;
+  color: white;
+}
+
+.warning_badge_offers {
+  background: #e95b08;
+  color: white;
+}
+
+.success_badge_offers {
+  background: #14c01d;
+  color: white;
+}
+
+/* More Offers */
+
+.btn-more-offers {
+  display: block;
+  margin: 20px auto;
+  justify-content: center;
+  padding: 10px;
+  max-width: 300px;
+  color: #382D91;
+  text-align: center;
+  border: 2px solid #382D91;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+.btn-more-offers:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #382D91;
+}
+
+/* ----------------------------------------*/
+
+/* MEDIAQUERIES */
+
+@media screen and (max-width: 639px) {
+
+  .d-inline-flex {
+    flex-direction: column;
+  }
+
+  .col {
+    margin: 0 auto;
+    transform: translateX(10%);
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 992px) {
+
+  .d-inline-flex {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .col {
+    margin: 0 auto;
+    transform: translateX(45%);
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+}
+
+/*@media (min-width: 768px) {
+    .wrapper .d-inline-flex {
+        column-count: 1;
+   }
+}
+@media (min-width: 992px) {
+    .wrapper .d-inline-flex {
+        column-count: 1;
+   }
+}
+@media (min-width: 1200px) {
+    .wrapper .d-inline-flex .col {
+        column-count: 1;
+   }
+}*/

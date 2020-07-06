@@ -1,18 +1,20 @@
 $(document).ready(function () {
-  $('#sidebar').hide()
-  $('.overlay').hide()
+
+  $('#sidebar').hide();
 
   $('#dismiss, .overlay').on('click', function () {
     // hide sidebar
-    $('#sidebar').hide()
+    $('#sidebar').hide();
     // hide overlay
-    $('.overlay').hide()
-  })
+    $('.overlay').removeClass('active');
+  });
 
   $('.sidebarCollapse').on('click', function () {
     // open sidebar
-    $('#sidebar').show()
+    $('#sidebar').show();
     // fade in the overlay
-    $('.overlay').show()
-  })
-})
+    $('.overlay').addClass('active');
+    $('.collapse.in').toggleClass('in');
+    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+  });
+});

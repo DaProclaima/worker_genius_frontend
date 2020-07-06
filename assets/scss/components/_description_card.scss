@@ -35,7 +35,7 @@
   top: 0;
   right: 0;
   float: right;
-  background-image: url(../../img/cards/card_1.jpg);
+  background-image: url(../../img/cards/card_2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border: none;
@@ -46,7 +46,9 @@
 
 .sidebar-content {
   padding: 10px;
-  overflow: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 450px;
 }
 
 .title-post-desc-offers {
@@ -68,6 +70,7 @@
 /* Footer */
 
 .sidebar-footer {
+  width: 500px;
   margin: 0 auto;
   bottom: 0;
   padding: 10px;
@@ -75,6 +78,7 @@
 
 .card-btn-desc-offers {
   display: block;
+  position: relative;
   margin: 0 auto;
   justify-content: center;
   padding: 10px;
@@ -87,7 +91,8 @@
 
 .card-btn-desc-offers:hover {
   cursor: pointer;
-  color: #382D91;
+  color: #fff;
+  background: #382D91;
   text-align: center;
   text-decoration: none;
 }
@@ -132,7 +137,8 @@
   background: #fff;
   color: #000;
   border: 2px solid #382D91;
-  transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+  /*transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);*/
+  transition: all 1s ease-in-out;
   transform-origin: center right; /* Set the transformed position of sidebar to center right side. */
   cursor: pointer;
 }
@@ -148,22 +154,25 @@
 
 .overlay {
   position: fixed;
+  float: left;
+  top: 0;
   /* full screen */
   width: 100vw;
   height: 100vh;
   /* transparent black */
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(57, 45, 145, 0.95);
   /* middle layer, i.e. appears below the sidebar */
-  z-index: 1000;
+  z-index: -1;
   opacity: 0;
   /* animate the transition */
   transition: all 0.5s ease-in-out;
 }
-
 /* display .overlay when it has the .active class */
 .overlay.active {
   display: block;
   opacity: 1;
+  z-index: 998;
+  cursor: pointer;
 }
 
 #dismiss {
@@ -173,6 +182,10 @@
   left: 10px;
   float: left;
 }
+
+/* ----------------------------------------*/
+
+/* MEDIAQUERIES */
 
 @media (max-width: 768px) {
   /* Reversing the behavior of the sidebar:
@@ -213,4 +226,16 @@
   .sidebarCollapse.active span:last-of-type {
     transform: rotate(-45deg) translate(1px, -1px);
   }
+}
+
+@media screen and (max-width: 576px) {
+
+  .overlay {
+    display: none!important;
+  }
+
+  #card.row {
+    display: none;
+  }
+
 }

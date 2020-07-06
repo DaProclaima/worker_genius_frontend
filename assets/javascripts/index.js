@@ -13,6 +13,8 @@
 // require ('./datepicker.min.js')
 // require ('./fontawesome.js')
 // import '../../node_modules/@chenfengyuan/datepicker/i18n/datepicker.fr-FR'
+require('isotope.pkgd.min')
+require('sidebar')
 require('./helper')
 require ('./webservices.js')
 require('./conversations.js')
