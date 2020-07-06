@@ -11,6 +11,9 @@ const api = axios.create({
 })
 
 const auth = axios.create({
+  headers: {
+    'Access-Control-Allow-Origin': '*'
+  },
   baseURL: process.env.auth || 'http://localhost:3017/api/v1/user',
   timeout: 1000
 
