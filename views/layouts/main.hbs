@@ -10,22 +10,26 @@
 
   <!-- Bootstrap Link -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
   <!-- Fontawesome Link -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
   <link rel="stylesheet" href="/public/css/app.css" type="text/css">
 </head>
   <body>
-  {{> navbar}}
-    {{{body}}}
-  {{> footer}}
-  </body>
+    <div class="container-fluid">
+    <header>
+      {{> navbar}}
+    </header>
+      {{{ body }}}
+      <!--<div class="overlay"></div>-->
+    <footer>
+      {{> footer }}
+    </footer>
   {{#block javascript}}
   <!-- Bootstrap script -->
-  <script  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-           integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script  src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
@@ -39,5 +43,68 @@
   <!-- Own script -->
   <script async type="module" src="/public/javascripts/main.js"></script>
   <!--<script type="text/javascript" src="/public/javascripts/mobile_nav_mobile_button.js"></script>-->
+  <script>
+
+  $('#sidebar').hide()
+  $('#dismiss, .overlay').on('click', function () {
+    // hide sidebar
+    $('#sidebar').hide()
+    // hide overlay
+    //$('.overlay').removeClass('active')
+  })
+  $('.sidebarCollapse').on('click', function () {
+    // open sidebar
+    $('#sidebar').show()
+    // fade in the overlay
+    //$('.overlay').addClass('active')
+    //$('.collapse.in').toggleClass('in')
+    //$('a[aria-expanded=true]').attr('aria-expanded', 'false')
+  })
+
+  </script>
+  
+  <script type="text/javascript">
+
+    const range = document.getElementById('range'),
+	  rangeV = document.getElementById('rangeV'),
+	  setValue = () => {
+		  const newValue = Number( (range.value - range.min) * 60 / (range.max - range.min) ),
+			newPosition = 5 - (newValue * 0.2)
+
+		  rangeV.innerHTML = `<span>+ ${range.value}</span>`
+		  rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`
+	  }
+    document.addEventListener("DOMContentLoaded", setValue)
+    range.addEventListener('input', setValue)
+
+    </script>
+
+    <script type="text/javascript">
+
+      // init Isotope
+      $('.grid').isotope({
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows',
+        fitRows: {
+          gutter: 10 
+        }
+      })
+
+      $('.dropdown-item').click(function() {
+        $('.dropdown-item').removeClass('item-active')
+        $(this).addClass('item-active')
+
+        var selector = $(this).attr('data-filter')
+        $('.grid').isotope({
+          filter: selector
+        })
+        return false;
+      })
+
+
+    </script>
+
   {{/block}}
+  </div>
+  </body>
 </html>

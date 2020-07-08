@@ -1,15 +1,15 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const exphbs = require('express-handlebars')
-var handlebars = require('handlebars');
-var layouts = require('handlebars-layouts');
+var handlebars = require('handlebars')
+var layouts = require('handlebars-layouts')
 const morgan = require('morgan')
 const path = require('path')
 const dotenv = require('dotenv')
 const { api } = require('./middleware/webservices')
 dotenv.config()
 
-handlebars.registerHelper(layouts(handlebars));
+handlebars.registerHelper(layouts(handlebars))
 
 // const proxy = axios({
 //   host: 'localhost', // TODO or env.process.API_HOST

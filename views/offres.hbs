@@ -1,311 +1,109 @@
-    <!-- Description card -->
-    <div class="row">
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4">
-        <div id="sidebar">
-          <!-- Sidebar Header -->
-          <div class="sidebar-header">
-            <div class="row">
-              <!-- Sidebar button close -->
-              <div id="dismiss" class="col-sm-1">
-                <span class="cross"><i class="fas fa-times"></i></span>
-              </div>
-              <div class="col-md-5 card-title-desc-offers">
-                <h5>Description Card Title</h5>
-                <p class="card-text-desc-offers">
-                  Lieu : <span>Paris</span>
-                  <span><i class="fas fa-map-marker-alt place-icon-color-offers" aria-hidden="true"></i></span>
-                </p>
-                <p class="card-text-desc-offers">
-                  Contrats : <span>CDD</span>
-                  <span><i class="fas fa-file-signature contract-icon-color-offers" aria-hidden="true"></i></span>
-                </p>
-                <p class="card-text-desc-offers">
-                  Certifications requise
-                </p>
-                <p class="card-text-desc-offers">
-                  <span>HTML, CSS, PHP, Javascript</span>
-                  <span><i class="fas fa-award contract-icon-color-offers" aria-hidden="true"></i></span>
-                </p>
-              </div>
-              <div class="col-md-6 card-img-desc-offers"></div>
-            </div>
-          </div>
-          <!-- / -->
+<!-- Searchbar -->
+{{> components/sidebar}}
+<!-- / -->
 
-          <!-- Sidebar Content -->
-          <div class="sidebar-content top-50">
-            <h6 class="title-post-desc-offers">Descriptif du poste</h6>
-            <p class="textgroup-desc-offers">
-              Pour accompagner notre développement, nous recherchons un(e) développeur(se) web FullStack
-            </p>
-            <h6 class="subtitle-post-desc-offers">Missions :</h6>
-            <p class="textgroup-desc-offers">
-                Développement de sites (basés sur les CMS Wordpress, Prestashop ou sur Symfony, Laravel, etc…)
-                Intégration et animation (HTML / CSS / jQuery).
-                Développement de scripts et de modules sur-mesure.
-                Développement d’applications mobiles hybrides.
-                Maintenance des sites et des infrastructures.
-                Développement de side-projects.
-            </p>
-          </div>
-          <!-- / -->
-
-          <!-- Sidebar Header -->
-          <div class="sidebar-footer">
-            <div class="row">
-              <div class="col-md-3"></div>
-              <div class="col-md-6 padding-15">
-                <a href="offres.html" type="submit" class="card-btn-desc-offers">Postuler à cette offre</a>
-              </div>
-              <div class="col-md-3"></div>
-            </div>
-          </div>
-          <!-- / -->
-
-        </div>
+<div id="content" class="container top-100">
+  <!-- Titre de la page-->
+  <h1 class="offers-title">Toutes les offres</h1>
+  <hr class="title-offers-underline">
+            
+  <!-- Searchbar -->
+  {{> components/offers/searchbar/searchbar}}
+  <!-- / -->
+        
+  <!-- Cards -->
+  <div id="card" class="top-50">
+    <div class="grid">
+      <div class="grid-item stage">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers}}
         <!-- / -->
       </div>
+      <div class="grid-item stage">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers-2}}
+        <!-- / -->
+      </div>
+      <div class="grid-item stage">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers-3}}
+        <!-- / -->
+      </div>
+      <div class="grid-item alternance">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers}}
+        <!-- / -->
+      </div>
+      <div class="grid-item alternance">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers-2}}
+        <!-- / -->
+      </div>
+      <div class="grid-item alternance">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers-3}}
+        <!-- / -->
+      </div>
+      <div class="grid-item interime">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers}}
+        <!-- / -->
+      </div>
+      <div class="grid-item interime">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers-2}}
+        <!-- / -->
+      </div>
+      <div class="grid-item interime">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers-3}}
+        <!-- / -->
+      </div>
+      <div class="grid-item cdd">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers}}
+        <!-- / -->
+      </div>
+      <div class="grid-item cdd">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers-2}}
+        <!-- / -->
+      </div>
+      <div class="grid-item cdd">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers-3}}
+        <!-- / -->
+      </div>
+      <div class="grid-item cdi">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers}}
+        <!-- / -->
+      </div>
+      <div class="grid-item cdi">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers-2}}
+        <!-- / -->
+      </div>
+      <div class="grid-item cdi">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers-3}}
+        <!-- / -->
+      </div>
+      <div class="grid-item freelance">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers}}
+        <!-- / -->
+      </div>
+      <div class="grid-item freelance">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers-2}}
+        <!-- / -->
+      </div>
+      <div class="grid-item freelance">
+        <!-- Card Description -->
+        {{> components/offers/cards/card-offers-3}}
+        <!-- / -->
+      </div>         
     </div>
-
-    <div class="container-fluid">
-        <div id="content" class="container top-100">
-
-            <!-- Titre de la page-->
-            <h1 class="offers-title">Toutes les offres</h1>
-            <hr class="title-offers-underline">
-            <!-- Search -->
-            <div class="input-group md-form form-sm form-1 pl-0">
-              <div class="input-group-prepend">
-                <span class="input-group-text btn_submit_offers"><i class="fas fa-search submit-icon-color-offers"
-                    aria-hidden="true"></i></span>
-              </div>
-              <input class="form-control my-0 py-1 search_offers" type="text" placeholder="Rechercher une offre" aria-label="Recherche">
-              <div class="input-group-prepend">
-                <span class="input-group-text btn_map_offers lighten-3"><i class="fas fa-map-marker-alt place-icon-color-offers"
-                    aria-hidden="true"></i></span>
-              </div>
-              <input class="form-control my-0 py-1 place_offers" type="text" placeholder="Où ?" aria-label="Lieu">
-              <div class="md-form filters_contract_offers align-items-center">
-                <a class="dropdown-primary dropdown-toggle" href="#" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Contrats
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item item-active" href="#stage">Stage</a>
-                  <a class="dropdown-item" href="#alternance">Alternance</a>
-                  <a class="dropdown-item" href="#interime">Intérime</a>
-                  <a class="dropdown-item" href="#cdd">CDD</a>
-                  <a class="dropdown-item" href="#cdi">CDI</a>
-                  <a class="dropdown-item" href="#freelance">Freelance</a>
-                </div>
-              </div>
-              <div class="md-form filters_experience_offers">
-                <a class="dropdown-primary dropdown-toggle" href="#" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Expériences
-                </a>
-                <div class="dropdown-menu experience-menu" aria-labelledby="Experience">
-                  <form>
-                    <div class="form-group experience_range">
-                      <div class="range-value" id="rangeV"></div>
-                      <b>1 an</b>
-                      <div class="range-value" id="rangeV"></div>
-		                  <input id="range" type="range" min="1" max="5" value="0" step="1">
-                      <b>+ 5 ans</b>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <!-- / -->
-
-            <!-- Cards -->
-            <div class="wrapper top-50">
-              <div class="row">
-                <div class="col">
-                  <div class="card card_offers shadow sidebarCollapse">
-                    <img class="card-img-top card-img-offers" src="public/images/cards/card_4.jpg" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">
-                        Lieu : <span>Paris</span>
-                        <span><i class="fas fa-map-marker-alt place-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                      <p class="card-text">
-                        Contrats : <span>CDD</span>
-                        <span><i class="fas fa-file-signature contract-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                    </div>
-                    <div class="card-badge danger_badge_offers"><span><i class="fas fa-exclamation"></i></span></div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card card_offers shadow">
-                    <img class="card-img-top card-img-offers" src="public/images/cards/card_4.jpg" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">
-                        Lieu : <span>Paris</span>
-                        <span><i class="fas fa-map-marker-alt place-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                      <p class="card-text">
-                        Contrats : <span>CDD</span>
-                        <span><i class="fas fa-file-signature contract-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                    </div>
-                    <div class="card-badge warning_badge_offers"><span><i class="fas fa-ellipsis-h"></i></span></div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card card_offers shadow">
-                    <img class="card-img-top card-img-offers" src="public/images/cards/card_4.jpg" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">
-                        Lieu : <span>Paris</span>
-                        <span><i class="fas fa-map-marker-alt place-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                      <p class="card-text">
-                        Contrats : <span>CDD</span>
-                        <span><i class="fas fa-file-signature contract-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                    </div>
-                    <div class="card-badge success_badge_offers"><span><i class="fas fa-check"></i></span></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row top-20">
-                <div class="col">
-                  <div class="card card_offers shadow">
-                    <img class="card-img-top card-img-offers" src="public/images/cards/card_4.jpg" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">
-                        Lieu : <span>Paris</span>
-                        <span><i class="fas fa-map-marker-alt place-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                      <p class="card-text">
-                        Contrats : <span>CDD</span>
-                        <span><i class="fas fa-file-signature contract-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                    </div>
-                    <div class="card-badge danger_badge_offers"><span><i class="fas fa-exclamation"></i></span></div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card card_offers shadow">
-                    <img class="card-img-top card-img-offers" src="public/images/cards/card_4.jpg" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">
-                        Lieu : <span>Paris</span>
-                        <span><i class="fas fa-map-marker-alt place-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                      <p class="card-text">
-                        Contrats : <span>CDD</span>
-                        <span><i class="fas fa-file-signature contract-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                    </div>
-                    <div class="card-badge warning_badge_offers"><span><i class="fas fa-ellipsis-h"></i></span></div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card card_offers shadow">
-                    <img class="card-img-top card-img-offers" src="public/images/cards/card_4.jpg" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">
-                        Lieu : <span>Paris</span>
-                        <span><i class="fas fa-map-marker-alt place-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                      <p class="card-text">
-                        Contrats : <span>CDD</span>
-                        <span><i class="fas fa-file-signature contract-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                    </div>
-                    <div class="card-badge success_badge_offers"><span><i class="fas fa-check"></i></span></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row top-20">
-                <div class="col">
-                  <div class="card card_offers shadow">
-                    <img class="card-img-top card-img-offers" src="public/images/cards/card_4.jpg" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">
-                        Lieu : <span>Paris</span>
-                        <span><i class="fas fa-map-marker-alt place-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                      <p class="card-text">
-                        Contrats : <span>CDD</span>
-                        <span><i class="fas fa-file-signature contract-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                    </div>
-                    <div class="card-badge danger_badge_offers"><span><i class="fas fa-exclamation"></i></span></div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card card_offers shadow">
-                    <img class="card-img-top card-img-offers" src="public/images/cards/card_4.jpg" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">
-                        Lieu : <span>Paris</span>
-                        <span><i class="fas fa-map-marker-alt place-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                      <p class="card-text">
-                        Contrats : <span>CDD</span>
-                        <span><i class="fas fa-file-signature contract-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                    </div>
-                    <div class="card-badge warning_badge_offers"><span><i class="fas fa-ellipsis-h"></i></span></div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card card_offers shadow">
-                    <img class="card-img-top card-img-offers" src="public/images/cards/card_4.jpg" alt="Card image cap">
-                    <div class="card-block">
-                      <h4 class="card-title">Card title</h4>
-                      <p class="card-text">
-                        Lieu : <span>Paris</span>
-                        <span><i class="fas fa-map-marker-alt place-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                      <p class="card-text">
-                        Contrats : <span>CDD</span>
-                        <span><i class="fas fa-file-signature contract-icon-color-offers" aria-hidden="true"></i></span>
-                      </p>
-                    </div>
-                    <div class="card-badge success_badge_offers shadow"><span><i class="fas fa-check"></i></span></div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <a href="#" class="btn-more-offers">En voir plus...</a>
-
-            <div class="overlay"></div>
-        </div>
-
-    </div>
-
-    <script type="text/javascript">
-
-    const range = document.getElementById('range'),
-	  rangeV = document.getElementById('rangeV'),
-	  setValue = () => {
-		  const newValue = Number( (range.value - range.min) * 60 / (range.max - range.min) ),
-			newPosition = 5 - (newValue * 0.2)
-
-		  rangeV.innerHTML = `<span>+ ${range.value}</span>`
-		  rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`
-	  }
-    document.addEventListener("DOMContentLoaded", setValue)
-    range.addEventListener('input', setValue)
-
-    </script>
+    <a href="#" class="btn-more-offers">Afficher plus d'offres</a>
+  </div>
