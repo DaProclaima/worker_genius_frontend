@@ -7,7 +7,6 @@ html {
 
 /* // CONTAINERS // */
 
-
 /* ----------------------------------------*/
 
 /* // COMPONENTS // */
@@ -179,12 +178,13 @@ footer {
   display: block;
   position: relative;
   width: 100%;
+  max-height: 50px;
   bottom: 0;
   padding: 10px;
   border-top: 2px solid #382D91;
-}
-
-footer {
-  color: #382D91;
-  text-align: center;
+  p{
+    max-height: 50px;
+    color: #382D91;
+    text-align: center;
+  }
 }

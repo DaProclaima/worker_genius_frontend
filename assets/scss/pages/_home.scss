@@ -20,12 +20,24 @@
   text-transform: uppercase;
 }
 
+.login-snip input{
+  justify-content: center;
+}
+
 hr{
   margin: auto;
   margin-top: 0rem;
   max-height: 1rem;
   border: 2px solid #302A75;
   text-align: center;
+}
+
+.cgu, .newsletter, .hr-enterprise, .foot label{
+  max-height: 10px;
+}
+
+.hr-enterprise {
+  margin: 40px 0;
 }
 
 .underline {

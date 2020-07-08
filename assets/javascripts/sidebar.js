@@ -1,13 +1,12 @@
-$(document).ready(function () {
+/* eslint-disable no-undef */
+jQuery(document).ready(function ($) {
   $('#sidebar').hide()
-
   $('#dismiss, .overlay').on('click', function () {
     // hide sidebar
     $('#sidebar').hide()
     // hide overlay
     $('.overlay').removeClass('active')
   })
-
   $('.sidebarCollapse').on('click', function () {
     // open sidebar
     $('#sidebar').show()
