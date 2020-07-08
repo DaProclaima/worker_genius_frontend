@@ -23,21 +23,62 @@
   {{> footer}}
   </body>
   {{#block javascript}}
-  <!-- Bootstrap script -->
-  <script  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-           integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Bootstrap script -->
+    <script  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-  <!-- Isotope script -->
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- Isotope script -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js" integrity="sha512-VGxuOMLdTe8EmBucQ5vYNoYDTGijqUsStF6eM7P3vA/cM1pqOwSBv/uxw94PhhJJn795NlOeKBkECQZ1gIzp6A==" crossorigin="anonymous"></script>
-  <!-- FullPage.js script -->
-  <!--<script src="/public/fullpage.js" type="text/javascript"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js" integrity="sha512-VGxuOMLdTe8EmBucQ5vYNoYDTGijqUsStF6eM7P3vA/cM1pqOwSBv/uxw94PhhJJn795NlOeKBkECQZ1gIzp6A==" crossorigin="anonymous"></script>
+    <!-- FullPage.js script -->
+    <!--<script src="/public/fullpage.js" type="text/javascript"></script>-->
 
-  <!-- Own script -->
-  <script async type="module" src="/public/javascripts/main.js"></script>
-  <!--<script type="text/javascript" src="/public/javascripts/mobile_nav_mobile_button.js"></script>-->
+    <!-- Own script -->
+    <script async type="module" src="/public/javascripts/main.js"></script>
+    <!--<script type="text/javascript" src="/public/javascripts/mobile_nav_mobile_button.js"></script>-->
+    <script>
+      const auth = axios.create({
+        baseURL: 'http://localhost:3017/api/v1/user',
+        timeout: 1000
+      })
+    </script>
+    <script>
+      function connectField() {
+        let userData = localStorage.getItem('worker-genius-user-data')
+        if (userData) {
+          return `
+<li class="nav-item nav-border-1">
+  <a class="nav-link" id="#user-profile" data-toggle="modal" data-target="#profile">Mon profil</a>
+  <a class="nav-link" id="#user-logout" data-toggle="modal" data-target="#candidate">Déconnexion</a>
+</li>`
+        }
+        else {
+          return `
+<li class="nav-item nav-border-1">
+  <a class="nav-link" href="/connexion" data-toggle="modal" data-target="#candidate">Connexion</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/inscription">Inscription</a>
+</li>`
+        }
+      }
+      function appendConnectionField(){
+        // const = class connection-field, then append element into html
+        const connectionField = document.querySelector('.navbar-field')
+        connectionField.innerHTML = connectField()
+      }
+      function signout() {
+
+        const data = localStorage.getItem('worker-genius-user-data')
+        console.log()
+      }
+
+      // appendConnectionField()
+      signout()
+    </script>
   {{/block}}
+
 </html>

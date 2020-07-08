@@ -1,15 +1,23 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const cors = require('cors')
 const exphbs = require('express-handlebars')
-var handlebars = require('handlebars');
-var layouts = require('handlebars-layouts');
+var handlebars = require('handlebars')
+var layouts = require('handlebars-layouts')
 const morgan = require('morgan')
 const path = require('path')
 const dotenv = require('dotenv')
-const { api } = require('./middleware/webservices')
+// const { auth } = require('./middleware/webservices')
 dotenv.config()
 
-handlebars.registerHelper(layouts(handlebars));
+exphbs.create({
+  helpers: {
+
+    bar: function () { return 'BAR!' }
+  }
+})
+
+handlebars.registerHelper(layouts(handlebars))
 
 // const proxy = axios({
 //   host: 'localhost', // TODO or env.process.API_HOST
@@ -45,6 +53,7 @@ class Server {
 
     this.app.use(bodyParser.urlencoded({ 'extended': true }))
     this.app.use(bodyParser.json())
+    this.app.use(cors())
 
     this.app.get('/', (_, res) => {
       res.redirect('/home')
@@ -81,10 +90,9 @@ class Server {
       })
     })
 
-    this.app.get('/candidat/log', async (_, res) => {
-      // const articles = await this.fecthArticle()
-      res.render('candidat-log', {
-        title: ' candidat: inscription | connexion'
+    this.app.get('/inscription', async (_, res) => {
+      res.render('inscription', {
+        title: 'inscription '
       })
     })
 
