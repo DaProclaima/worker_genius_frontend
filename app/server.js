@@ -101,7 +101,7 @@ class Server {
       res.render('conversations', { title: title })
     })
 
-    this.app.get('/create-offer', async (_, res) => {
+    this.app.get('/nouvelle-offre', async (_, res) => {
       // const articles = await this.fecthArticle()
       const title = 'Conversations privées'
       res.render('create-offer', { title: title })

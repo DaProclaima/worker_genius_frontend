@@ -107,3 +107,20 @@
     </div>
     <a href="#" class="btn-more-offers">Afficher plus d'offres</a>
   </div>
+</div>
+{{#block javascript}}
+{{/block}}
+<script type="text/javascript">
+    const range = document.getElementById('range'),
+        rangeV = document.getElementById('rangeV'),
+        setValue = () => {
+          const newValue = Number((range.value - range.min) * 60 / (range.max - range.min)),
+              newPosition = 5 - (newValue * 0.2)
+
+          rangeV.innerHTML = `<span>+ ${range.value}</span>`
+          rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`
+        }
+    document.addEventListener('DOMContentLoaded', setValue)
+    range.addEventListener('input', setValue)
+
+  </script>

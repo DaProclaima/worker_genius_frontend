@@ -23,7 +23,6 @@
       {{> navbar}}
     </header>
     {{{ body }}}
-    <!--<div class="overlay"></div>-->
     <footer>
       {{> footer }}
     </footer>
@@ -72,20 +71,7 @@
       })
     </script>
 
-    <script type="text/javascript">
-      const range = document.getElementById('range'),
-          rangeV = document.getElementById('rangeV'),
-          setValue = () => {
-            const newValue = Number((range.value - range.min) * 60 / (range.max - range.min)),
-                newPosition = 5 - (newValue * 0.2)
 
-            rangeV.innerHTML = `<span>+ ${range.value}</span>`
-            rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`
-          }
-      document.addEventListener('DOMContentLoaded', setValue)
-      range.addEventListener('input', setValue)
-
-    </script>
     <!-- / -->
 
     <!-- Isotope Srcipt -->
@@ -113,11 +99,11 @@
     <!-- / -->
 
     <script type="text/javascript">
-    
+
     $( function() {
       if ($('#ms-menu-trigger')[0]) {
         $('body').on('click', '#ms-menu-trigger', function() {
-          $('.ms-menu').toggleClass('toggled') 
+          $('.ms-menu').toggleClass('toggled')
         })
       }
     })
@@ -127,6 +113,10 @@
     <script>
       const auth = axios.create({
         baseURL: 'http://localhost:3017/api/v1/user',
+        timeout: 1000
+      })
+      const api = axios.create({
+        baseURL: 'http://localhost:3010/api/v1/',
         timeout: 1000
       })
     </script>
@@ -150,11 +140,11 @@
         let data = sessionStorage.getItem('worker-genius-user-data')
         // console.log(data)
         data = JSON.parse(data)
-        console.log(data.length)
+
         if (data) {
           const signoutBtn = document.querySelector('#btn-signout')
           signoutBtn.addEventListener('click', (e) => {
-            e.preventDefault
+            e.preventDefault()
             sessionStorage.removeItem('worker-genius-user-data')
             console.log('sessionStorage')
             console.log(sessionStorage.getItem('worker-genius-user-data'))
