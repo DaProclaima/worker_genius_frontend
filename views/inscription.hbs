@@ -128,13 +128,14 @@
         hash: form.querySelector('#pass-connexion').value
       }
 
-      const userData = await auth.post('/login', options).then( async res => {
+      let userData = await auth.post('/login', options).then( async res => {
         return await res.data
       }).catch(error => {console.error(error)})
       console.log(userData)
+      userData = JSON.stringify(userData)
       sessionStorage.setItem('worker-genius-user-data', userData)
       console.log('connecté')
-      const locData = sessionStorage.getItem('worker-genius-user-data')
+      let locData = sessionStorage.getItem('worker-genius-user-data')
       console.log(locData.creation_date)
       window.location.replace("/offres")
 
