@@ -72,7 +72,6 @@ class Server {
     })
 
     this.app.get('/certification', async (_, res) => {
-
       // const articles = await this.fecthArticle()
       const title = 'Développeur PHP'
       res.render('certification', {
