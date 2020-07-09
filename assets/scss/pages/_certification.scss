@@ -1,0 +1,118 @@
+/* -------------------- CERTIFICATION PAGE --------------------*/
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container-certification {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    min-height: 100%;
+    left: 0;
+    top: 0;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background: #2e3c8e;
+    border: 2px solid #2e3c8e;
+}
+
+/* // MARGINS // */
+
+.top-100 {
+    margin-top: 100px;
+}
+  
+.top-50 {
+    margin-top: 50px;
+}
+  
+.top-20 {
+    margin-top: 20px;
+}
+  
+/* ----------------------------------------*/
+  
+/* TITLE */
+  
+.certification-title {
+    color: #fff;
+    text-align: center;
+}
+  
+.title-certification-underline {
+    width: 10%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+}
+  
+/* COUNTDOWN */
+
+.countdown {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+/* DESCRIPTION BLOCK */
+
+.description {
+    min-height: 100%;
+    padding: 15px;
+    background: #fff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+h5.subtitle {
+    font-size: 24px!important;
+    font-weight: bold!important;
+    text-transform: uppercase!important;
+}
+
+.description-text {
+    font-size: 16px;
+}
+
+/* TEXT EDIT BLOCK */
+
+.text-edit {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.text-edit textarea {
+    resize: none;
+    margin-bottom: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* SUBMIT BLOCK */
+
+.submit-container {
+    height: 100px;
+    padding: 15px;
+    color: #fff;
+    background: #382D91;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.btn-submit {
+    color: #382D91;
+    background: #fff;
+    border: 2px solid #382D91;
+    border-radius: 50px;
+}
+
+.btn-submit:hover {
+    color: #fff;
+    background: #2e3c8e;
+    border: 2px solid #382D91;
+    border-radius: 50px;
+}
