@@ -75,8 +75,8 @@ In an other tab:
 Want to stop the app ? Just type CTRL + C
 
 ## How to access the backend application locally in dev env ?
-Get the backend project with the command below:
-> git clone git@github.com:DaProclaima/worker_genius_frontend.git
+Get the backend project with the command below and follow the instructions there:
+> git clone git@github.com:DaProclaima/worker_genius_backend.git
 
 Then, install the node dependencies with yarn with this command:
 > yarn install
@@ -88,15 +88,3 @@ Execute the backend application server with this command in an other terminal:
 > yarn start
 
 This will run the backend application on port 3010. In parallel, keep your frontend application running on port 3000.
-
-## How to fetch backend datas locally in dev env ?
-
-Go in app/server.js.
-Enable node-fetch package which is required to fetch datas from an url.
-And write an instruction as below to fetch datas:
-```
- const myvar = fetch('http://localhost:3010/myentity/crudmethod/')
-```
-To get the CRUD methods and entities available, please, refer to the readme.md documentation on https://github.com/DaProclaima/worker_genius_backend#readme
-
-

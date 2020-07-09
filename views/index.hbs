@@ -1,0 +1,156 @@
+<!-- Form Register -->
+{{> components/home/form-register}}
+<!-- / -->
+
+
+<div class="homepage" style="margin-top: 1140px">
+
+
+
+<!--{{> components/home-title }}-->
+
+<div class="title-container">
+  <h2 class="homepage-title">Certifications du moment</h2>
+  <hr class="underline">
+</div>
+
+<div class="container">
+
+  <!-- Cards -->
+  <div id="card" class="top-50">
+    <div class="grid">
+      <!-- Card Description -->
+      {{!-- {{#each jobOffers}}
+        {{> components/offers/cards/card-offers jobOffer=this}}
+      {{/each}} --}}
+      {{> components/my-offers/card-offer}}
+      <!-- / -->
+    </div>
+    <a href="/offres" class="btn-more-offers">Afficher plus d'offres</a>
+  </div>
+
+</div>
+
+
+<div class="title-container">
+  <h2 class="homepage-title">Qui sommes-nous ?</h2>
+  <hr class="underline">
+</div>
+
+<div class="title-container">
+  <h2 class="homepage-title">La team</h2>
+  <hr class="underline">
+</div>
+
+
+</div>
+
+
+{{#block javascript}}
+  <!-- Bootstrap script -->
+  <script  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+           integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <!-- Isotope script -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js" integrity="sha512-VGxuOMLdTe8EmBucQ5vYNoYDTGijqUsStF6eM7P3vA/cM1pqOwSBv/uxw94PhhJJn795NlOeKBkECQZ1gIzp6A==" crossorigin="anonymous"></script>
+  <!-- FullPage.js script -->
+  <!--<script src="/public/fullpage.js" type="text/javascript"></script>-->
+
+  <!-- Own script -->
+  <script async type="module" src="/public/javascripts/main.js"></script>
+  <!--<script type="text/javascript" src="/public/javascripts/mobile_nav_mobile_button.js"></script>-->
+
+
+  <script type="text-javascript">
+
+    $('#btn-login').click(function () {
+        $('#connexion').removeClass('d-none')
+        $('#register').addClass('d-none')
+    })
+
+    $('#btn-register').click(function () {
+        $('#connexion').addClass('d-none')
+        $('#register').removeClass('d-none')
+    })
+
+  </script>
+{{/block}}
+<script>
+  function signupEnterprise () {
+    const signupBtn = document.querySelector('btn-signup-enterprise')
+    signupBtn.addEventListener('click', (e) => {
+      e.preventDefault()
+      // console.log('signup')
+      const form = document.querySelector('sign-up-form-enterprise')
+      // console.log(form.childNodes)
+
+      const datas = {
+        pseudo: form.querySelector('#enterprise-pseudo').value,
+        firstname: form.querySelector('#enterprise-firstname').value,
+        lastname: form.querySelector('#enterprise-lastname').value,
+        username: form.querySelector('#enterprise-pseudo').value,
+        email: form.querySelector('#enterpris-eemail').value,
+        hash: form.querySelector('#enterprise-pass').value,
+        verifyHash: form.querySelector('#enterprise-pass-confirm').value
+      }
+      console.log(datas)
+      const options = {
+        method: 'POST',
+        url: '/register',
+        data : datas,
+        transformResponse: [(data) => {
+          return data;
+        }]
+      }
+
+      auth(options).then(data => {
+        console.log(data)
+      })
+
+    })
+  }
+  function signupCandidate () {
+    const signupBtn = document.querySelector('btn-signup-candidate')
+    signupBtn.addEventListener('click', (e) => {
+      e.preventDefault()
+      // console.log('signup')
+      const form = document.querySelector('sign-up-form-candidate')
+      // console.log(form.childNodes)
+
+      const datas = {
+        pseudo: form.querySelector('#candidate-pseudo').value,
+        firstname: form.querySelector('#candidate-firstname').value,
+        lastname: form.querySelector('#candidate-lastname').value,
+        username: form.querySelector('#candidate-pseudo').value,
+        email: form.querySelector('#candidate-eemail').value,
+        hash: form.querySelector('#candidate-pass').value,
+        verifyHash: form.querySelector('#candidate-pass-confirm').value
+      }
+      console.log(datas)
+      const options = {
+        method: 'POST',
+        url: '/register',
+        data : datas,
+        transformResponse: [(data) => {
+          return data;
+        }]
+      }
+
+      auth(options).then(data => {
+        console.log(data)
+      })
+
+    })
+  }
+  signupEnterprise()
+</script>
+
+
+
+
+
+

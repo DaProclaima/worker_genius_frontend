@@ -1,4 +1,4 @@
-/*.homepag{
+/*.homepage{
   .introduction {
     h1 {
       height: 10rem;;
@@ -9,6 +9,7 @@
 .title-container {
   max-height: 15rem;
   margin-top: 3rem;
+}
 
 .homepage-title {
   height: 3rem;
@@ -19,12 +20,24 @@
   text-transform: uppercase;
 }
 
+.login-snip input{
+  justify-content: center;
+}
+
 hr{
   margin: auto;
   margin-top: 0rem;
   max-height: 1rem;
-  border: 2px solid #302A75;
+  border: 2px solid #382D91;
   text-align: center;
+}
+
+.cgu, .newsletter, .hr-enterprise, .foot label{
+  max-height: 10px;
+}
+
+.hr-enterprise {
+  margin: 40px 0;
 }
 
 .underline {
@@ -43,4 +56,14 @@ hr{
   border-radius: 50%;
 }
 
+.input-connexion {
+  color: #000000;
+}
+
+#login, #register {
+  z-index: 1000;
+}
+
+.login-space .group .input {
+  color: #382D91!important;
 }
