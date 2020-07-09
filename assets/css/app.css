@@ -1132,7 +1132,7 @@ hr {
   margin: auto;
   margin-top: 0rem;
   max-height: 1rem;
-  border: 2px solid #302A75;
+  border: 2px solid #382D91;
   text-align: center;
 }
 
@@ -1158,6 +1158,14 @@ hr {
   max-width: 5rem;
   max-height: 2rem;
   border-radius: 50%;
+}
+
+.input-connexion {
+  color: #000000;
+}
+
+.login-space .group .input {
+  color: #382D91 !important;
 }
 
 /* -------------------- CERTIFICATION PAGE --------------------*/
