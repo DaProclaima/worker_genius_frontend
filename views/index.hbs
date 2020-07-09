@@ -1,105 +1,11 @@
-<!-- Login / Register for candidat -->
-<div id="candidate">
-  <div class="row">
-    <div class="col-md-6 mx-auto p-0">
-      <div class="card">
-        <div class="login-box">
-          <div class="login-snip">
-            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Candidat</label>
-            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Entreprise</label>
-            <div class="login-space">
-              <div class="login">
-                  <div class="group">
-                    <input id="user-pseudo" type="text" class="input" placeholder="Pseudo" required value="jb-swizz75">
-                  </div>
-                  <div class="group d-flex justify-content-around">
-                    <input id="user-lastname" type="text" class="input float-left" placeholder="Nom" required
-                    value="VEESLER">
-                    <input id="user-firstname" type="text" class="input float-right" placeholder="Prénom" required
-                    value="Jean-Baptiste">
-                  </div>
-                  <div class="group d-flex justify-content-around">
-                    <input id="pass" type="password" class="input" data-type="password" placeholder="Nouveau mot de
-                    passe" required value="password">
-                    <input id="pass-confirm" type="password" class="input" data-type="password" placeholder="Confirmer
-                    mot de passe" required value="password">
-                  </div>
-                  <div class="group">
-                    <input id="email" type="text" class="input" placeholder="Entrer votre adresse mail" required
-                    value="jean-baptiste.vesleer@gmail.com">
-                  </div>
-                  <div class="group">
-                    <input type="submit" class="button btn-signup" value="S'inscrire">
-                  </div>
-                  <div class="group">
-                    <input id="check-cgu" type="checkbox" class="check">
-                    <label for="check">
-                      <span class="icon"></span> J'ai et j'accepte les CGU et la Poilitique de Confidentialité de Worker Genius
-                    </label>
-                  </div>
-                  <div class="group">
-                    <input id="check-newsletter" type="checkbox" class="check">
-                    <label for="check">
-                      <span class="icon"></span> S'inscrire à la newsletter
-                    </label>
-                  </div>
-                  <div class="hr"></div>
-                  <div class="foot">
-                    <a href="#connexion">Déjà inscrit ?</a>
-                  </div>
-              </div>
+<!-- Register -->
+{{> components/home/form-login}}
+<!-- / -->
 
-              <div class="sign-up-form">
-                  <div class="group">
-                    <input id="user-pseudo" type="text" class="input" placeholder="Pseudo" required value="Sopra">
-                  </div>
-                  <div class="group">
-                    <input id="user-siret" type="text" class="input" placeholder="Pseudo" required value="442 293 775 00031">
-                  </div>
-                  <div class="group d-flex justify-content-around">
-                    <input id="user-lastname" type="text" class="input float-left" placeholder="Nom" required
-                    value="Doe">
-                    <input id="user-firstname" type="text" class="input float-right" placeholder="Prénom" required
-                    value="John">
-                  </div>
-                  <div class="group d-flex justify-content-around">
-                    <input id="pass" type="password" class="input" data-type="password" placeholder="Nouveau mot de
-                    passe" required value="password">
-                    <input id="pass-confirm" type="password" class="input" data-type="password" placeholder="Confirmer
-                    mot de passe" required value="password">
-                  </div>
-                  <div class="group">
-                    <input id="email" type="text" class="input" placeholder="Entrer votre adresse mail" required
-                    value="john.doe@gmail.com">
-                  </div>
-                  <div class="group">
-                    <input type="submit" class="button btn-signup" value="S'inscrire">
-                  </div>
-                  <div class="group cgu">
-                    <input id="check-cgu" type="checkbox" class="check">
-                    <label for="check">
-                      <span class="icon"></span> J'ai et j'accepte les CGU et la Poilitique de Confidentialité de Worker Genius
-                    </label>
-                  </div>
-                  <div class="group newsletter">
-                    <input id="check-newsletter" type="checkbox" class="check">
-                    <label for="check">
-                      <span class="icon"></span> S'inscrire à la newsletter
-                    </label>
-                  </div>
-                  <div class="hr hr-enterprise"></div>
-                  <div class="foot">
-                    <label for="tab-1">Déjà inscrit ?</label>
-                  </div>
-                </div>
+<!-- Form Register -->
+{{> components/home/form-register}}
+<!-- / -->
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 {{#block javascript}}
   <!-- Bootstrap script -->
   <script  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -117,6 +23,13 @@
   <!-- Own script -->
   <script async type="module" src="/public/javascripts/main.js"></script>
   <!--<script type="text/javascript" src="/public/javascripts/mobile_nav_mobile_button.js"></script>-->
+
+
+  <script>
+
+    
+
+  </script>
 {{/block}}
 
 
