@@ -1,10 +1,50 @@
-<!-- Register -->
-{{> components/home/form-login}}
-<!-- / -->
-
 <!-- Form Register -->
 {{> components/home/form-register}}
 <!-- / -->
+
+
+<div class="homepage" style="margin-top: 1140px">
+
+
+
+<!--{{> components/home-title }}-->
+
+<div class="title-container">
+  <h2 class="homepage-title">Certifications du moment</h2>
+  <hr class="underline">
+</div>
+
+<div class="container">
+
+  <!-- Cards -->
+  <div id="card" class="top-50">
+    <div class="grid">
+      <!-- Card Description -->
+      {{!-- {{#each jobOffers}}
+        {{> components/offers/cards/card-offers jobOffer=this}}
+      {{/each}} --}}
+      {{> components/my-offers/card-offer}}
+      <!-- / -->
+    </div>
+    <a href="/offres" class="btn-more-offers">Afficher plus d'offres</a>
+  </div>
+
+</div>
+
+
+<div class="title-container">
+  <h2 class="homepage-title">Qui sommes-nous ?</h2>
+  <hr class="underline">
+</div>
+
+<div class="title-container">
+  <h2 class="homepage-title">La team</h2>
+  <hr class="underline">
+</div>
+
+
+</div>
+
 
 {{#block javascript}}
   <!-- Bootstrap script -->
@@ -25,9 +65,17 @@
   <!--<script type="text/javascript" src="/public/javascripts/mobile_nav_mobile_button.js"></script>-->
 
 
-  <script>
+  <script type="text-javascript">
 
+    $('#btn-login').click(function () {
+        $('#connexion').removeClass('d-none')
+        $('#register').addClass('d-none')
+    })
 
+    $('#btn-register').click(function () {
+        $('#connexion').addClass('d-none')
+        $('#register').removeClass('d-none')
+    })
 
   </script>
 {{/block}}
