@@ -26,6 +26,7 @@
 {{#block javascript}}
 {{/block}}
 <script type="text/javascript">
+  let jobId
   const range = document.getElementById('range'),
       rangeV = document.getElementById('rangeV'),
       setValue = () => {
@@ -59,8 +60,9 @@
     gridItems.forEach( item => {
       item.addEventListener('click', async (e) => {
         e.preventDefault()
-        console.log(item.id)
-        let data = await api(`/job-offer/show/${item.id}`).then(res => {
+        jobId = item.id
+        console.log(jobId)
+        let data = await api.get(`/job-offer/show/${jobId}`).then(res => {
           return res.data
         })
         console.log(data)
@@ -69,5 +71,29 @@
     })
 
   }
+  function applyJob() {
+    const submitBtn = document.querySelector('.job-offer-submit')
+    let userData = sessionStorage.getItem('worker-genius-user-data')
+    userData = JSON.parse(userData)
+    // console.log(userData)
+    submitBtn.addEventListener('click', async (e) => {
+      const infos = await api.put(`/job-offer/edit/${jobId}`, {
+        list_candidates: {
+          id: userData.id,
+          username: userData.username,
+          firstname: userData.firstname,
+          lastname: userData.lastname,
+          email: userData.email
+        }
+      }).then(res => {
+        console.log(res.data)
+        return res.data
+      })
+      console.log(infos)
+    })
+  }
   getOfferData()
+  applyJob()
+
+
 </script>

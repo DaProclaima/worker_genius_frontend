@@ -72,15 +72,29 @@ class Server {
     })
 
     this.app.get('/certification', async (_, res) => {
+
       // const articles = await this.fecthArticle()
-      const title = 'Bienvenue !'
-      res.render('certification', { title: title })
+      const title = 'Développeur PHP'
+      res.render('certification', {
+        title: title
+      })
     })
 
     this.app.get('/certifications', async (_, res) => {
-      // const articles = await this.fecthArticle()
+      let certifications
+      try {
+        certifications = await api.get('/certification/list', '').then(res => {
+          console.log(res.data)
+          return res.data
+        }).catch(error => { console.error(error) })
+      } catch (e) {
+        console.error(e)
+      }
       const title = 'certifications'
-      res.render('certifications', { title: title })
+      res.render('certifications', {
+        title: title,
+        certifications: certifications
+      })
     })
 
     this.app.get('/offres', async (_, res) => {
@@ -90,7 +104,7 @@ class Server {
         offers = await api.get('/job-offer/list', '').then(res => {
           console.log(res.data)
           return res.data
-        }).catch(error => { console.err(error) })
+        }).catch(error => { console.error(error) })
       } catch (e) {
         console.error(e)
       }
