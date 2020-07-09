@@ -1,3 +1,4 @@
+const axios = require('axios')
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
@@ -7,8 +8,13 @@ var layouts = require('handlebars-layouts')
 const morgan = require('morgan')
 const path = require('path')
 const dotenv = require('dotenv')
-// const { auth } = require('./middleware/webservices')
+// let { api } = require('./middleware/webservices')
 dotenv.config()
+
+let api = axios.create({
+  baseURL: process.env.api || 'http://localhost:3010/api/v1',
+  timeout: 1000
+})
 
 exphbs.create({
   helpers: {
@@ -53,6 +59,7 @@ class Server {
 
     this.app.use(bodyParser.urlencoded({ 'extended': true }))
     this.app.use(bodyParser.json())
+    this.app.use(cors())
 
     this.app.get('/', (_, res) => {
       res.redirect('/home')
@@ -77,15 +84,21 @@ class Server {
     })
 
     this.app.get('/offres', async (_, res) => {
-      // const articles = await this.fecthArticle()
-      const title = 'Offres d’emploi !'
+      let offers
+      // console.log(api)
+      try {
+        offers = await api.get('/job-offer/list', '').then(res => {
+          console.log(res.data)
+          return res.data
+        }).catch(error => { console.err(error) })
+      } catch (e) {
+        console.error(e)
+      }
+      const title = 'Offres d’emploi'
+      console.log(offers)
       res.render('offres', {
         title: title,
-        jobOffers: [
-          {
-            title: 'Développeur PHP'
-          }
-        ]
+        jobOffers: offers
       })
     })
 
