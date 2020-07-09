@@ -6,6 +6,37 @@
 {{> components/home/form-register}}
 <!-- / -->
 
+<div class="homepage">
+{{> components/carousel }}
+<!--{{> components/home-title }}-->
+
+<div class="title-container">
+  <h2 class="homepage-title">Certifications du moment</h2>
+  <hr class="underline">
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="title-container">
+      <h2 class="homepage-title">Qui sommes-nous ?</h2>
+      <hr class="underline-2">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="title-container">
+      <h2 class="homepage-title">La team</h2>
+      <hr class="underline-2">
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
 {{#block javascript}}
   <!-- Bootstrap script -->
   <script  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -25,9 +56,17 @@
   <!--<script type="text/javascript" src="/public/javascripts/mobile_nav_mobile_button.js"></script>-->
 
 
-  <script>
+  <script type="text-javascript">
 
-    
+    $('#btn-login').click(function () {
+        $('#connexion').removeClass('d-none')
+        $('#register').addClass('d-none')
+    })
+
+    $('#btn-register').click(function () {
+        $('#connexion').addClass('d-none')
+        $('#register').removeClass('d-none')
+    })
 
   </script>
 {{/block}}
