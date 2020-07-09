@@ -62,7 +62,7 @@
         e.preventDefault()
         jobId = item.id
         console.log(jobId)
-        let data = await api(`/job-offer/show/${jobId}`).then(res => {
+        let data = await api.get(`/job-offer/show/${jobId}`).then(res => {
           return res.data
         })
         console.log(data)
