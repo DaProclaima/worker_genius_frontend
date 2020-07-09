@@ -6,6 +6,8 @@
 /* ----------------------------------------- */
 /*                 ~ BASE ~                  */
 /* ----------------------------------------- */
+//@import '../../node_modules/bootstrap/scss/bootstrap';
+//@import "../../node_modules/font-awesome/scss/font-awesome";
 @import "base/base";
 @import "base/typography";
 
@@ -17,18 +19,15 @@
 /* ----------------------------------------- */
 /*              ~ COMPONENTS ~               */
 /* ----------------------------------------- */
-@import "components/header";
-@import "components/navbar.scss";
-@import "components/footer";
-@import "components/logo";
-@import "components/avatar";
-@import "components/split-bar";
-@import "components/carousel";
-@import "components/cards";
-@import "components/team";
+@import "components/description_card";
+@import "components/offres";
+@import "components/signup_login_candidat";
 /* ----------------------------------------- */
 /*                 ~ PAGES ~                 */
 /* ----------------------------------------- */
 @import "pages/home";
 @import "pages/certification";
+@import "pages/certifications";
+@import "pages/chat";
+@import "pages/offres";
 
