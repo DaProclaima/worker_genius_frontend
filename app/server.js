@@ -134,6 +134,12 @@ class Server {
       res.render('create-offer', { title: title })
     })
 
+    this.app.get('/mes-offres', async (_, res) => {
+      // const articles = await this.fecthArticle()
+      const title = 'Conversations privées'
+      res.render('mes-offres', { title: title })
+    })
+
     this.app.use(bodyParser.urlencoded({ 'extended': true }))
     this.app.use(bodyParser.json())
   }
