@@ -90,9 +90,9 @@
     const signinBtn = document.querySelector('#btn-signin')
     signinBtn.addEventListener('click', async (e) => {
       e.preventDefault()
-      const form = document.querySelector('.sign-in-form')
+      const form = document.querySelector('.connexion')
       const options = {
-        email: form.querySelector('.email-login').value,
+        email: form.querySelector('#email-login').value,
         hash: form.querySelector('#pass-connexion').value
       }
 

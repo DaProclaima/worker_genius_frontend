@@ -6,37 +6,6 @@
 {{> components/home/form-register}}
 <!-- / -->
 
-<div class="homepage">
-{{> components/carousel }}
-<!--{{> components/home-title }}-->
-
-<div class="title-container">
-  <h2 class="homepage-title">Certifications du moment</h2>
-  <hr class="underline">
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="title-container">
-      <h2 class="homepage-title">Qui sommes-nous ?</h2>
-      <hr class="underline-2">
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="title-container">
-      <h2 class="homepage-title">La team</h2>
-      <hr class="underline-2">
-    </div>
-  </div>
-</div>
-
-
-</div>
-
-
 {{#block javascript}}
   <!-- Bootstrap script -->
   <script  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -56,20 +25,82 @@
   <!--<script type="text/javascript" src="/public/javascripts/mobile_nav_mobile_button.js"></script>-->
 
 
-  <script type="text-javascript">
+  <script>
 
-    $('#btn-login').click(function () {
-        $('#connexion').removeClass('d-none')
-        $('#register').addClass('d-none')
-    })
 
-    $('#btn-register').click(function () {
-        $('#connexion').addClass('d-none')
-        $('#register').removeClass('d-none')
-    })
 
   </script>
 {{/block}}
+<script>
+  function signupEnterprise () {
+    const signupBtn = document.querySelector('btn-signup-enterprise')
+    signupBtn.addEventListener('click', (e) => {
+      e.preventDefault()
+      // console.log('signup')
+      const form = document.querySelector('sign-up-form-enterprise')
+      // console.log(form.childNodes)
+
+      const datas = {
+        pseudo: form.querySelector('#enterprise-pseudo').value,
+        firstname: form.querySelector('#enterprise-firstname').value,
+        lastname: form.querySelector('#enterprise-lastname').value,
+        username: form.querySelector('#enterprise-pseudo').value,
+        email: form.querySelector('#enterpris-eemail').value,
+        hash: form.querySelector('#enterprise-pass').value,
+        verifyHash: form.querySelector('#enterprise-pass-confirm').value
+      }
+      console.log(datas)
+      const options = {
+        method: 'POST',
+        url: '/register',
+        data : datas,
+        transformResponse: [(data) => {
+          return data;
+        }]
+      }
+
+      auth(options).then(data => {
+        console.log(data)
+      })
+
+    })
+  }
+  function signupCandidate () {
+    const signupBtn = document.querySelector('btn-signup-candidate')
+    signupBtn.addEventListener('click', (e) => {
+      e.preventDefault()
+      // console.log('signup')
+      const form = document.querySelector('sign-up-form-candidate')
+      // console.log(form.childNodes)
+
+      const datas = {
+        pseudo: form.querySelector('#candidate-pseudo').value,
+        firstname: form.querySelector('#candidate-firstname').value,
+        lastname: form.querySelector('#candidate-lastname').value,
+        username: form.querySelector('#candidate-pseudo').value,
+        email: form.querySelector('#candidate-eemail').value,
+        hash: form.querySelector('#candidate-pass').value,
+        verifyHash: form.querySelector('#candidate-pass-confirm').value
+      }
+      console.log(datas)
+      const options = {
+        method: 'POST',
+        url: '/register',
+        data : datas,
+        transformResponse: [(data) => {
+          return data;
+        }]
+      }
+
+      auth(options).then(data => {
+        console.log(data)
+      })
+
+    })
+  }
+  signupEnterprise()
+</script>
+
 
 
 
