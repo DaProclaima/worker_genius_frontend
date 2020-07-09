@@ -1164,6 +1164,10 @@ hr {
   color: #000000;
 }
 
+#login, #register {
+  z-index: 1000;
+}
+
 .login-space .group .input {
   color: #382D91 !important;
 }
