@@ -133,36 +133,35 @@
     <script>
       function connectionFields () {
         let userData = sessionStorage.getItem('worker-genius-user-data')
-        // const fieldConnected = document.querySelectorAll('.connected-field')
-        // const fieldDisconnected = document.querySelectorAll('.disconnected-field')
+        userData = JSON.parse(userData)
         const fieldConnected = $('.connected-field')
         const fieldDisconnected = $('.disconnected-field')
-
-        // console.log(fieldDisconnected, fieldConnected)
         if (userData) {
           fieldConnected.removeClass('d-none')
           fieldDisconnected.addClass('d-none')
           return
         }
-        fieldConnected.classList.add('d-none')
-        fieldDisconnected.classList.remove('d-none')
+        fieldConnected.addClass('d-none')
+        fieldDisconnected.removeClass('d-none')
         return
       }
 
       function signout () {
-        const data = sessionStorage.getItem('worker-genius-user-data')
-        console.log(data)
-        if(!data === undefined) {
+        let data = sessionStorage.getItem('worker-genius-user-data')
+        // console.log(data)
+        data = JSON.parse(data)
+        console.log(data.length)
+        if (data) {
           const signoutBtn = document.querySelector('#btn-signout')
           signoutBtn.addEventListener('click', (e) => {
             e.preventDefault
             sessionStorage.removeItem('worker-genius-user-data')
             console.log('sessionStorage')
             console.log(sessionStorage.getItem('worker-genius-user-data'))
+            window.location.replace("/home")
           })
-          window.location.replace("/inscription")
         } else {
-          console.log('potooooo')
+          console.log('nooooo')
         }
       }
 
