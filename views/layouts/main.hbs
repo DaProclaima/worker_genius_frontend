@@ -51,7 +51,9 @@
     <!-- Own script -->
     <script async type="module" src="/public/javascripts/main.js"></script>
     <!--<script type="text/javascript" src="/public/javascripts/mobile_nav_mobile_button.js"></script>-->
-    <script>
+
+    <!-- Sidebar script -->
+    <script type="text/javascript">
       <!--    TODO -->
       $('#sidebar').hide()
       $('#dismiss, .overlay').on('click', function () {
@@ -84,7 +86,9 @@
       range.addEventListener('input', setValue)
 
     </script>
+    <!-- / -->
 
+    <!-- Isotope Srcipt -->
     <script type="text/javascript">
       // init Isotope
       $('.grid').isotope({
@@ -106,6 +110,20 @@
         return false
       })
     </script>
+    <!-- / -->
+
+    <script type="text/javascript">
+    
+    $( function() {
+      if ($('#ms-menu-trigger')[0]) {
+        $('body').on('click', '#ms-menu-trigger', function() {
+          $('.ms-menu').toggleClass('toggled') 
+        })
+      }
+    })
+
+    </script>
+
     <script>
       const auth = axios.create({
         baseURL: 'http://localhost:3017/api/v1/user',
