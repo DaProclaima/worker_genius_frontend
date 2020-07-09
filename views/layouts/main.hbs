@@ -113,38 +113,42 @@
       })
     </script>
     <script>
-      function connectField () {
-        let userData = localStorage.getItem('worker-genius-user-data')
-        if (userData) {
-          return `
-  <li class="nav-item nav-border-1">
-    <a class="nav-link" id="#user-profile" data-toggle="modal" data-target="#profile">Mon profil</a>
-    <a class="nav-link" id="#user-logout" data-toggle="modal" data-target="#candidate">Déconnexion</a>
-  </li>`
-        } else {
-          return `
-  <li class="nav-item nav-border-1">
-    <a class="nav-link" href="/connexion" data-toggle="modal" data-target="#candidate">Connexion</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/inscription">Inscription</a>
-  </li>`
-        }
-      }
+      function connectionFields () {
+        let userData = sessionStorage.getItem('worker-genius-user-data')
+        // const fieldConnected = document.querySelectorAll('.connected-field')
+        // const fieldDisconnected = document.querySelectorAll('.disconnected-field')
+        const fieldConnected = $('.connected-field')
+        const fieldDisconnected = $('.disconnected-field')
 
-      function appendConnectionField () {
-        // const = class connection-field, then append element into html
-        const connectionField = document.querySelector('.navbar-field')
-        connectionField.innerHTML = connectField()
+        // console.log(fieldDisconnected, fieldConnected)
+        if (userData) {
+          fieldConnected.removeClass('d-none')
+          fieldDisconnected.addClass('d-none')
+          return
+        }
+        fieldConnected.classList.add('d-none')
+        fieldDisconnected.classList.remove('d-none')
+        return
       }
 
       function signout () {
-
-        const data = localStorage.getItem('worker-genius-user-data')
-        console.log()
+        const data = sessionStorage.getItem('worker-genius-user-data')
+        console.log(data)
+        if(!data === undefined) {
+          const signoutBtn = document.querySelector('#btn-signout')
+          signoutBtn.addEventListener('click', (e) => {
+            e.preventDefault
+            sessionStorage.removeItem('worker-genius-user-data')
+            console.log('sessionStorage')
+            console.log(sessionStorage.getItem('worker-genius-user-data'))
+          })
+          window.location.replace("/inscription")
+        } else {
+          console.log('potooooo')
+        }
       }
 
-      // appendConnectionField()
+      connectionFields()
       signout()
     </script>
   {{/block}}

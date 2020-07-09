@@ -118,54 +118,7 @@
   <script async type="module" src="/public/javascripts/main.js"></script>
   <!--<script type="text/javascript" src="/public/javascripts/mobile_nav_mobile_button.js"></script>-->
 {{/block}}
-  <script>
-  const auth = axios.create({
-    baseURL: 'http://localhost:3017/api/v1/user',
-    timeout: 1000
 
-  })
-  function signup() {
-    const signupBtn = document.querySelector('.btn-signup')
-    signupBtn.addEventListener('click', (e) => {
-      e.preventDefault
-      console.log('signup')
-      const form = document.querySelector('.sign-up-form')
-      console.log(form.childNodes)
-
-      // const data = {
-      //   firstname: form.querySelector('#user-firstname').value,
-      //   lastname: form.querySelector('#user-lastname').value,
-      //   username: form.querySelector('#user-pseudo').value,
-      //   email: form.querySelector('#email').value,
-      //   hash: form.querySelector('#pass').value,
-      //   verifyHash: form.querySelector('#pass-confirm').value
-      // }
-      const options = {
-        method: 'POST',
-        url: '/register',
-        data : {
-          firstname: form.querySelector('#user-firstname').value,
-          lastname: form.querySelector('#user-lastname').value,
-          username: form.querySelector('#user-pseudo').value,
-          email: form.querySelector('#email').value,
-          hash: form.querySelector('#pass').value,
-          verifyHash: form.querySelector('#pass-confirm').value
-        },
-        transformResponse: [(data) => {
-          // transform the response
-
-          return data;
-        }]
-      }
-
-      auth(options).then(data => {
-        console.log(data)
-      })
-
-    })
-  }
-  signup()
-</script>
 
 
 

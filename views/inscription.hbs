@@ -81,6 +81,11 @@
 {{#block javascript}}
 {{/block}}
 <script>
+  async function getSigninData(options){
+    await auth.post('/login', options).then( async res => {
+      return await res.data
+    }).catch(error => {console.err(error)})
+  }
   function signup() {
     const signupBtn = document.querySelector('.btn-signup')
     signupBtn.addEventListener('click', (e) => {
@@ -115,27 +120,24 @@
   }
   function signin() {
     const signinBtn = document.querySelector('#btn-signin')
-    signinBtn.addEventListener('click', (e) => {
+    signinBtn.addEventListener('click', async (e) => {
       e.preventDefault
-      // console.log('signup')
       const form = document.querySelector('.sign-in-form')
-      const datas = {
+      const options = {
         email: form.querySelector('.email-login').value,
         hash: form.querySelector('#pass-connexion').value
       }
-      const options = {
-        method: 'POST',
-        url: '/login',
-        data: datas,
-        transformResponse: [(data) => {
-          return data;
-        }]
-      }
 
-      auth(options).then(data => {
-        // console.log(data)
-        localStorage.setItem('worker-genius-user-data', data);
-      })
+      const userData = await auth.post('/login', options).then( async res => {
+        return await res.data
+      }).catch(error => {console.error(error)})
+      console.log(userData)
+      sessionStorage.setItem('worker-genius-user-data', userData)
+      console.log('connecté')
+      const locData = sessionStorage.getItem('worker-genius-user-data')
+      console.log(locData.creation_date)
+      window.location.replace("/offres")
+
     })
   }
   signup()

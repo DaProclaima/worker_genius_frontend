@@ -8,7 +8,7 @@
     <span class="icon-bar"></span>
   </div>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav pull-right navbar-field">
+    <ul class="navbar-nav pull-right">
       <li class="nav-item">
         <a class="nav-link active" href="/home">Accueil</a>
       </li>
@@ -18,8 +18,20 @@
       <li class="nav-item">
         <a class="nav-link" href="/certifications">Certifications</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item last-nav-item">
         <a class="nav-link" href="/conversations">Conversations</a>
+      </li>
+      <li class="nav-item nav-border-1 connected-field d-none">
+        <a class="nav-link" id="#user-profile" data-toggle="modal" data-target="#profile">Mon profil</a>
+      </li>
+      <li class="nav-item nav-border-1 connected-field d-none">
+        <a class="nav-link" id="btn-signout" data-toggle="modal" data-target="#candidate">Déconnexion</a>
+      </li>
+      <li class="nav-item nav-border-1 disconnected-field">
+        <a class="nav-link" href="/connexion" data-toggle="modal" data-target="#candidate">Connexion</a>
+      </li>
+      <li class="nav-item disconnected-field">
+        <a class="nav-link" href="/inscription">Inscription</a>
       </li>
     </ul>
 
