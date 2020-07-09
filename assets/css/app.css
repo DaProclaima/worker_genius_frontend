@@ -290,7 +290,19 @@ footer p {
   top: 0;
   right: 0;
   float: right;
-  background-image: url(../../img/cards/card_2.jpg);
+  background-image: url(/public/images/cards/card_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  border-bottom-left-radius: 15px;
+}
+
+.card-img-desc-userList {
+  min-height: 200px;
+  top: 0;
+  right: 0;
+  float: right;
+  background-image: url(public/images/cards/card_2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border: none;
@@ -319,6 +331,30 @@ footer p {
   font-size: 16;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+/*
+* USER LIST
+*/
+.sidebar-content-userList {
+  padding: 10px;
+  overflow: auto;
+  max-height: 500px;
+}
+
+#list-user {
+  list-style: none;
+  text-decoration: none;
+}
+
+.user p {
+  font-size: 13px;
+  color: #382D91;
+  text-align: center;
+}
+
+.userList-name {
+  font-weight: bold;
 }
 
 /* Footer */
@@ -2243,6 +2279,11 @@ h4.card-title {
 .success_badge_offers {
   background: #14c01d;
   color: white;
+}
+
+.nbr_badge_offer {
+  background: #382D91;
+  color: #fff;
 }
 
 /*

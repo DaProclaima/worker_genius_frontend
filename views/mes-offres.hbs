@@ -1,0 +1,74 @@
+<!-- Searchbar -->
+{{> components/my-offers/sidebar}}
+<!-- / -->
+
+<div id="content" class="container top-100">
+  <!-- Titre de la page-->
+  <h1 class="offers-title">Mes offres</h1>
+  <hr class="title-offers-underline">
+
+  <!-- Searchbar -->
+  {{> components/offers/searchbar/searchbar}}
+  <!-- / -->
+
+  <!-- Cards -->
+  <div id="card" class="top-50">
+    <div class="grid">
+      <!-- Card Description -->
+      {{!-- {{#each jobOffers}}
+        {{> components/offers/cards/card-offers jobOffer=this}}
+      {{/each}} --}}
+      {{> components/my-offers/card-offer}}
+      <!-- / -->
+    </div>
+    <a href="#" class="btn-more-offers">Afficher plus d'offres</a>
+  </div>
+</div>
+{{#block javascript}}
+{{/block}}
+<script type="text/javascript">
+  const range = document.getElementById('range'),
+      rangeV = document.getElementById('rangeV'),
+      setValue = () => {
+        const newValue = Number((range.value - range.min) * 60 / (range.max - range.min)),
+            newPosition = 5 - (newValue * 0.2)
+
+        rangeV.innerHTML = `<span>+ ${range.value}</span>`
+        rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`
+      }
+  document.addEventListener('DOMContentLoaded', setValue)
+  range.addEventListener('input', setValue)
+  function printDataSideBar(data) {
+    let title = document.querySelector('.h5-title')
+    let location = document.querySelector('.span-location')
+    let contract = document.querySelector('.span-contract')
+    let certifications = document.querySelector('.span-certifications')
+    let h6Title = document.querySelector('.h6-title')
+    let description = document.querySelector('.p-description')
+
+    title.innerHTML = data.title
+    location.innerHTML = data.title
+    contract.innerHTML = data.contract_type
+    certifications.innerHTML = data.list_required_certifications
+    h6Title.innerHTML = data.title
+    description.innerHTML = data.description
+
+  }
+  function getOfferData() {
+    const gridItems = document.querySelectorAll('.grid-item')
+    // console.log(gridItems)
+    gridItems.forEach( item => {
+      item.addEventListener('click', async (e) => {
+        e.preventDefault()
+        console.log(item.id)
+        let data = await api(`/job-offer/show/${item.id}`).then(res => {
+          return res.data
+        })
+        console.log(data)
+        printDataSideBar(data)
+      })
+    })
+
+  }
+  getOfferData()
+</script>
