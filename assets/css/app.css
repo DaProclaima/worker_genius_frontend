@@ -1518,11 +1518,7 @@ h4.card-title {
    }
 }*/
 body {
-  font-family: Roboto, sans-serif;
-  font-size: 13px;
-  line-height: 1.42857143;
-  color: #767676;
-  background-color: #edecec;
+  font-size: 14px;
 }
 
 #messages-main {
@@ -1547,27 +1543,6 @@ body {
   background: #fff;
 }
 
-@media (min-width: 768px) {
-  #messages-main .ms-body {
-    padding-left: 240px;
-  }
-}
-@media (max-width: 767px) {
-  #messages-main .ms-menu {
-    height: calc(100% - 58px);
-    display: none;
-    z-index: 1;
-    top: 58px;
-  }
-
-  #messages-main .ms-menu.toggled {
-    display: block;
-  }
-
-  #messages-main .ms-body {
-    overflow: hidden;
-  }
-}
 #messages-main .ms-user {
   padding: 15px;
   background: #f8f8f8;
@@ -1623,9 +1598,11 @@ body {
 }
 
 .message-feed:not(.right) .mf-content {
-  background: #03a9f4;
+  margin-left: 5px;
+  background: #382D91;
   color: #fff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
 }
 
 .message-feed.right .mf-content {
@@ -1690,10 +1667,14 @@ body {
   background: #f2f2f2;
 }
 
+/* Avatar */
 .img-avatar {
-  height: 37px;
-  border-radius: 2px;
-  width: 37px;
+  height: 45px;
+  width: 45px;
+}
+
+.circle {
+  border-radius: 100%;
 }
 
 .list-group.lg-alt .list-group-item {
@@ -1769,6 +1750,37 @@ body {
   -moz-user-select: none;
 }
 
+.mobile-menu-message {
+  display: none;
+}
+
+/* MEDIASQUERIES */
+@media (min-width: 768px) {
+  #messages-main .ms-body {
+    padding-left: 240px;
+  }
+}
+@media (max-width: 767px) {
+  #messages-main .ms-menu {
+    height: calc(100% - 58px);
+    display: none;
+    z-index: 1;
+    top: 58px;
+  }
+
+  #messages-main .ms-menu.toggled {
+    display: block;
+  }
+
+  #messages-main .ms-body {
+    overflow: hidden;
+  }
+}
+@media (min-width: 556px) {
+  .mobile-menu-message {
+    display: block;
+  }
+}
 /* -------------------- OFFERS PAGE --------------------*/
 /* // MARGINS // */
 .top-100 {
