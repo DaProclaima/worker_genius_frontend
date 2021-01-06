@@ -17,7 +17,7 @@
     "lint": "eslint .eslintrc.js .eslintignore ./app/ app.js"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "body-parser": "1.18.3",
